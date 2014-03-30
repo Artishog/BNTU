@@ -1,0 +1,14 @@
+E:\Artishog\диссертация\BNTU project\BNTU project\bin\Debug\BNTU project.exe.config
+E:\Artishog\диссертация\BNTU project\BNTU project\obj\Debug\BNTU project.csprojResolveAssemblyReference.cache
+E:\Artishog\диссертация\BNTU project\BNTU project\obj\Debug\BNTU_project.Form1.resources
+E:\Artishog\диссертация\BNTU project\BNTU project\obj\Debug\BNTU_project.Properties.Resources.resources
+E:\Artishog\диссертация\BNTU project\BNTU project\obj\Debug\BNTU project.csproj.GenerateResource.Cache
+E:\Artishog\диссертация\BNTU project\BNTU project\bin\Debug\BNTU project.exe
+E:\Artishog\диссертация\BNTU project\BNTU project\bin\Debug\BNTU project.pdb
+E:\Artishog\диссертация\BNTU project\BNTU project\obj\Debug\BNTU project.exe
+E:\Artishog\диссертация\BNTU project\BNTU project\obj\Debug\BNTU project.pdb
+E:\Artishog\диссертация\BNTU project\BNTU project\obj\Debug\BNTU_project.CarSettingsForm.resources
+E:\Artishog\диссертация\BNTU project\BNTU project\obj\Debug\BNTU_project.gearwhellSettingsForm.resources
+E:\Artishog\диссертация\BNTU project\BNTU project\obj\Debug\BNTU_project.DifferentialSettingsForm.resources
+E:\Artishog\диссертация\BNTU project\BNTU project\obj\Debug\BNTU_project.TransferGearboxSettingsForm.resources
+E:\Artishog\диссертация\BNTU project\BNTU project\obj\Debug\BNTU_project.SingleResultForm.resources
