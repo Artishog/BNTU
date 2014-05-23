@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace BNTU_project
 {
-    public class GearwheelPair
+    public class GearwheelPair: ParentElement
     {
         private double _beta_d; //угол наклона зубьев
         private double _mt; //окружной модуль
@@ -28,6 +28,89 @@ namespace BNTU_project
         private double _aw2_d; //действительное межосевое расстояние
 
         public GearwheelPair()
+        {
+            this._outputPropertyList = new List<string>();
+
+            outputPropertyList.AddRange(new String[] {
+                        "Угол наклона зубьев",
+                        "Окружной модуль",
+                        "Суммарное число зубьев кинематической пары",
+                        "Число зубьев ведущего колеса",
+                        "Число зубьев ведомого колеса",
+                        "Требуемое передаточное число пары",
+                        "Действительное передаточное число",
+                        "Погрешность",
+                        "Делительный диаметр ведомого колеса",
+                        "Делительный диаметр ведущего колеса",
+                        "Диаметр вершин зубьев ведомого колеса",
+                        "Диаметр вершин зубьев ведущего колеса",
+                        "Диаметр впадин зубьев ведомого колеса",
+                        "Диаметр впадин зубьев ведущего колеса",
+                        "Ширина зубчатого венца",
+                        "Рабочая ширина зубчатого венца",
+            });
+        }
+
+        public override object getByName(string name)
+        {
+            switch (name)
+            {
+                case "Угол наклона зубьев":
+                    return _beta_d;
+                    break;
+                case "Окружной модуль":
+                    return _mt;
+                    break;
+                case "Суммарное число зубьев кинематической пары":
+                    return _z_sum;
+                    break;
+                case "Число зубьев ведущего колеса":
+                    return _z_shest;
+                    break;
+                case "Число зубьев ведомого колеса":
+                    return _z_kol;
+                    break;
+                case "Требуемое передаточное число пары":
+                    return _U;
+                    break;
+                case "Действительное передаточное число":
+                    return _U_d;
+                    break;
+                case "Погрешность":
+                    return _delta_U;
+                    break;
+                case "Делительный диаметр ведомого колеса":
+                    return _d_kol;
+                    break;
+                case "Делительный диаметр ведущего колеса":
+                    return _d_shest;
+                    break;
+                case "Диаметр вершин зубьев ведомого колеса":
+                    return _da_kol;
+                    break;
+                case "Диаметр вершин зубьев ведущего колеса":
+                    return _da_shest;
+                    break;
+                case "Диаметр впадин зубьев ведомого колеса":
+                    return _df_kol;
+                    break;
+                case "Диаметр впадин зубьев ведущего колеса":
+                    return _df_shest;
+                    break;
+                case "Ширина зубчатого венца":
+                    return _bw;
+                    break;
+                case "Рабочая ширина зубчатого венца":
+                    return _bf_shest;
+                    break;
+
+                default:
+                    return null;
+                    break;
+            }
+        }
+
+        public override void setByName(string name, object value)
         {
         }
 

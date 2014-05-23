@@ -12,3 +12,55 @@ E:\Artishog\диссертация\BNTU project\BNTU project\obj\Debug\BNTU_proj
 E:\Artishog\диссертация\BNTU project\BNTU project\obj\Debug\BNTU_project.DifferentialSettingsForm.resources
 E:\Artishog\диссертация\BNTU project\BNTU project\obj\Debug\BNTU_project.TransferGearboxSettingsForm.resources
 E:\Artishog\диссертация\BNTU project\BNTU project\obj\Debug\BNTU_project.SingleResultForm.resources
+E:\Artishog\диссертация\BNTU project\BNTU project\obj\Debug\BNTU_project.DependenceGraphicForm.resources
+E:\Artishog\диссертация\BNTU project\BNTU project\bin\Debug\ZedGraph.dll
+E:\Artishog\диссертация\BNTU project\BNTU project\bin\Debug\ZedGraph.xml
+E:\Artishog\диссертация\BNTU project\BNTU project\bin\Debug\de\ZedGraph.resources.dll
+E:\Artishog\диссертация\BNTU project\BNTU project\bin\Debug\es\ZedGraph.resources.dll
+E:\Artishog\диссертация\BNTU project\BNTU project\bin\Debug\fr\ZedGraph.resources.dll
+E:\Artishog\диссертация\BNTU project\BNTU project\bin\Debug\hu\ZedGraph.resources.dll
+E:\Artishog\диссертация\BNTU project\BNTU project\bin\Debug\it\ZedGraph.resources.dll
+E:\Artishog\диссертация\BNTU project\BNTU project\bin\Debug\ja\ZedGraph.resources.dll
+E:\Artishog\диссертация\BNTU project\BNTU project\bin\Debug\pt\ZedGraph.resources.dll
+E:\Artishog\диссертация\BNTU project\BNTU project\bin\Debug\ru\ZedGraph.resources.dll
+E:\Artishog\диссертация\BNTU project\BNTU project\bin\Debug\sk\ZedGraph.resources.dll
+E:\Artishog\диссертация\BNTU project\BNTU project\bin\Debug\sv\ZedGraph.resources.dll
+E:\Artishog\диссертация\BNTU project\BNTU project\bin\Debug\tr\ZedGraph.resources.dll
+E:\Artishog\диссертация\BNTU project\BNTU project\bin\Debug\zh-cn\ZedGraph.resources.dll
+E:\Artishog\диссертация\BNTU project\BNTU project\bin\Debug\zh-tw\ZedGraph.resources.dll
+f:\Artishog\диссертация\BNTU project\BNTU project\bin\Debug\BNTU project.exe.config
+f:\Artishog\диссертация\BNTU project\BNTU project\obj\Debug\BNTU project.exe
+f:\Artishog\диссертация\BNTU project\BNTU project\obj\Debug\BNTU project.pdb
+f:\Artishog\диссертация\BNTU project\BNTU project\bin\Debug\BNTU project.exe
+f:\Artishog\диссертация\BNTU project\BNTU project\bin\Debug\BNTU project.pdb
+f:\Artishog\диссертация\BNTU project\BNTU project\bin\Debug\MySql.Data.dll
+f:\Artishog\диссертация\BNTU project\BNTU project\bin\Debug\ZedGraph.dll
+f:\Artishog\диссертация\BNTU project\BNTU project\bin\Debug\ZedGraph.xml
+f:\Artishog\диссертация\BNTU project\BNTU project\bin\Debug\de\ZedGraph.resources.dll
+f:\Artishog\диссертация\BNTU project\BNTU project\bin\Debug\es\ZedGraph.resources.dll
+f:\Artishog\диссертация\BNTU project\BNTU project\bin\Debug\fr\ZedGraph.resources.dll
+f:\Artishog\диссертация\BNTU project\BNTU project\bin\Debug\hu\ZedGraph.resources.dll
+f:\Artishog\диссертация\BNTU project\BNTU project\bin\Debug\it\ZedGraph.resources.dll
+f:\Artishog\диссертация\BNTU project\BNTU project\bin\Debug\ja\ZedGraph.resources.dll
+f:\Artishog\диссертация\BNTU project\BNTU project\bin\Debug\pt\ZedGraph.resources.dll
+f:\Artishog\диссертация\BNTU project\BNTU project\bin\Debug\ru\ZedGraph.resources.dll
+f:\Artishog\диссертация\BNTU project\BNTU project\bin\Debug\sk\ZedGraph.resources.dll
+f:\Artishog\диссертация\BNTU project\BNTU project\bin\Debug\sv\ZedGraph.resources.dll
+f:\Artishog\диссертация\BNTU project\BNTU project\bin\Debug\tr\ZedGraph.resources.dll
+f:\Artishog\диссертация\BNTU project\BNTU project\bin\Debug\zh-cn\ZedGraph.resources.dll
+f:\Artishog\диссертация\BNTU project\BNTU project\bin\Debug\zh-tw\ZedGraph.resources.dll
+f:\Artishog\диссертация\BNTU project\BNTU project\obj\Debug\BNTU project.csprojResolveAssemblyReference.cache
+f:\Artishog\диссертация\BNTU project\BNTU project\obj\Debug\BNTU_project.CarSettingsForm.resources
+f:\Artishog\диссертация\BNTU project\BNTU project\obj\Debug\BNTU_project.DependenceGraphicForm.resources
+f:\Artishog\диссертация\BNTU project\BNTU project\obj\Debug\BNTU_project.DifferentialSettingsForm.resources
+f:\Artishog\диссертация\BNTU project\BNTU project\obj\Debug\BNTU_project.Form1.resources
+f:\Artishog\диссертация\BNTU project\BNTU project\obj\Debug\BNTU_project.GearwhellSettingsForm.resources
+f:\Artishog\диссертация\BNTU project\BNTU project\obj\Debug\BNTU_project.Properties.Resources.resources
+f:\Artishog\диссертация\BNTU project\BNTU project\obj\Debug\BNTU_project.SingleResultForm.resources
+f:\Artishog\диссертация\BNTU project\BNTU project\obj\Debug\BNTU_project.TransferGearboxSettingsForm.resources
+f:\Artishog\диссертация\BNTU project\BNTU project\obj\Debug\BNTU project.csproj.GenerateResource.Cache
+f:\Artishog\диссертация\BNTU project\BNTU project\obj\Debug\BNTU_project.KinematicSchemeForm.resources
+e:\Artishog\диссертация\BNTU project\BNTU project\bin\Debug\MySql.Data.dll
+e:\Artishog\диссертация\BNTU project\BNTU project\obj\Debug\BNTU_project.KinematicSchemeForm.resources
+E:\Artishog\диссертация\BNTU project\BNTU project\obj\Debug\BNTU_project.SingleCheckForm.resources
+E:\Artishog\диссертация\BNTU project\BNTU project\obj\Debug\BNTU_project.LoadModeSettingsForm.resources

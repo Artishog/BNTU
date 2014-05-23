@@ -30,7 +30,7 @@ namespace BNTU_project
             if (mainForm.car.vehicleType != null)
                 this.comboBox1.SelectedItem = mainForm.car.vehicleType;
             else 
-                this.comboBox1.SelectedItem = "Легковой";
+                this.comboBox1.SelectedItem = "Грузовой";
 
             textBox1.Text = mainForm.car.ma.ToString();
             textBox2.Text = mainForm.car.m1.ToString();
@@ -46,10 +46,7 @@ namespace BNTU_project
             textBox12.Text = mainForm.car.L0.ToString();
             textBox13.Text = mainForm.car.U0.ToString();
             textBox14.Text = mainForm.car.Ukp.ToString();
-            textBox15.Text = mainForm.car.Urk_psi.ToString();
             textBox16.Text = mainForm.car.kpd_tr.ToString();
-            textBox17.Text = mainForm.car.Urk_fi.ToString();
-            textBox18.Text = mainForm.car.Urk.ToString();
 
             this.textBox1.Select();
         }
@@ -73,12 +70,7 @@ namespace BNTU_project
                 mainForm.car.L0 = int.Parse(textBox12.Text);
                 mainForm.car.U0 = double.Parse(textBox13.Text);
                 mainForm.car.Ukp = double.Parse(textBox14.Text);
-                mainForm.car.Urk_psi = double.Parse(textBox15.Text);
                 mainForm.car.kpd_tr = double.Parse(textBox16.Text);
-                mainForm.car.Urk_fi = double.Parse(textBox17.Text);
-                mainForm.car.Urk = double.Parse(textBox18.Text);
-
-                mainForm.button1_Click(sender, e);
             }
             catch (FormatException ex)
             {

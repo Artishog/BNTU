@@ -91,8 +91,6 @@ namespace BNTU_project
                 mainForm.gearwheel.beta = trackBar1.Value;
                 mainForm.gearwheel.mn = (double)trackBar2.Value / 100;
                 mainForm.gearwheel.coef_bw = (double)trackBar3.Value / 100;
-
-                mainForm.button1_Click(sender, e);
             }
             catch (FormatException ex)
             {

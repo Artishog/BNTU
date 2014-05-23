@@ -46,8 +46,6 @@ namespace BNTU_project
             {
                 mainForm.transferGearbox.delta = double.Parse(textBox1.Text);
                 mainForm.transferGearbox.Ka = (double)trackBar1.Value / 10;
-
-                mainForm.button1_Click(sender, e);
             }
             catch (FormatException ex)
             {

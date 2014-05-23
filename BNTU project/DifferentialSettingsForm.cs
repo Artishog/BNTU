@@ -46,8 +46,6 @@ namespace BNTU_project
             {
                 mainForm.differential.gamma_p = double.Parse(textBox1.Text);
                 mainForm.differential.n_sat = trackBar1.Value;
-
-                mainForm.button1_Click(sender, e);
             }
             catch (FormatException ex)
             {
