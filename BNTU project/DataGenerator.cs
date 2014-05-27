@@ -190,6 +190,20 @@ namespace BNTU_project
             steel.PHlimM = 190;
             this.steelList.Add(steel);
 
+            steel.steelGrade = "20Х2Н4А";
+            steel.thermalTreatment = "Цементация";
+            steel.surfaceHardness = 63;
+            steel.coreHardness = 41;
+            steel.sigmaFlimb_c_star = 460;
+            steel.NFO = 4000000;
+            steel.mF = 9;
+            steel.PHlimb_star = 21;
+            steel.NHO = 120000000;
+            steel.mH = 3;
+            steel.sigmaFlimM = 1950;
+            steel.PHlimM = 190;
+            this.steelList.Add(steel);
+
             //необходимо дополнить
         }
 

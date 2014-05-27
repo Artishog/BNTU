@@ -39,7 +39,7 @@ namespace BNTU_project
             calc_aw2withoutDifferential(gearwheelPair2.aw2_d);
             calc_H1(gearwheelPair1.d_shest, gearwheelPair1.d_kol, gearwheelPair2.d_kol);
             calc_H2();
-            calc_B1(gearwheelPair2.d_kol);
+            calc_B1(gearwheelPair1.d_kol);
             calc_B2();
             calc_m_korp();
             calc_d1();
@@ -97,9 +97,9 @@ namespace BNTU_project
             _H2 = _H1 + 2 * _delta;
         }
 
-        public void calc_B1(double d_kol2)
+        public void calc_B1(double d_kol1)
         {
-            _B1 = d_kol2 + 10;
+            _B1 = d_kol1 + 10;
         }
 
         public void calc_B2()

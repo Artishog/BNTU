@@ -200,8 +200,6 @@
             this.label215 = new System.Windows.Forms.Label();
             this.label205 = new System.Windows.Forms.Label();
             this.label195 = new System.Windows.Forms.Label();
-            this.label214 = new System.Windows.Forms.Label();
-            this.label204 = new System.Windows.Forms.Label();
             this.label194 = new System.Windows.Forms.Label();
             this.label213 = new System.Windows.Forms.Label();
             this.label203 = new System.Windows.Forms.Label();
@@ -246,7 +244,7 @@
             this.tabControl1.Controls.Add(this.tabPage5);
             this.tabControl1.Controls.Add(this.tabPage6);
             this.tabControl1.Location = new System.Drawing.Point(1, 2);
-            this.tabControl1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabControl1.Margin = new System.Windows.Forms.Padding(4);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.tabControl1.SelectedIndex = 0;
@@ -295,9 +293,9 @@
             this.tabPage1.Controls.Add(this.label2);
             this.tabPage1.Controls.Add(this.label1);
             this.tabPage1.Location = new System.Drawing.Point(4, 25);
-            this.tabPage1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage1.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(4);
             this.tabPage1.Size = new System.Drawing.Size(903, 759);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Tag = "";
@@ -705,9 +703,9 @@
             this.tabPage2.Controls.Add(this.label41);
             this.tabPage2.Controls.Add(this.label40);
             this.tabPage2.Location = new System.Drawing.Point(4, 25);
-            this.tabPage2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage2.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(4);
             this.tabPage2.Size = new System.Drawing.Size(903, 759);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Tag = "";
@@ -929,9 +927,9 @@
             this.tabPage3.Controls.Add(this.label61);
             this.tabPage3.Controls.Add(this.label60);
             this.tabPage3.Location = new System.Drawing.Point(4, 25);
-            this.tabPage3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage3.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage3.Padding = new System.Windows.Forms.Padding(4);
             this.tabPage3.Size = new System.Drawing.Size(903, 759);
             this.tabPage3.TabIndex = 2;
             this.tabPage3.Text = "первой пары";
@@ -1292,9 +1290,9 @@
             this.tabPage4.Controls.Add(this.label101);
             this.tabPage4.Controls.Add(this.label100);
             this.tabPage4.Location = new System.Drawing.Point(4, 25);
-            this.tabPage4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage4.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage4.Padding = new System.Windows.Forms.Padding(4);
             this.tabPage4.Size = new System.Drawing.Size(903, 759);
             this.tabPage4.TabIndex = 3;
             this.tabPage4.Text = "второй пары";
@@ -1661,9 +1659,9 @@
             this.tabPage5.Controls.Add(this.label141);
             this.tabPage5.Controls.Add(this.label140);
             this.tabPage5.Location = new System.Drawing.Point(4, 25);
-            this.tabPage5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage5.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage5.Padding = new System.Windows.Forms.Padding(4);
             this.tabPage5.Size = new System.Drawing.Size(903, 759);
             this.tabPage5.TabIndex = 4;
             this.tabPage5.Text = "дифференциала";
@@ -2058,8 +2056,6 @@
             this.tabPage6.Controls.Add(this.label215);
             this.tabPage6.Controls.Add(this.label205);
             this.tabPage6.Controls.Add(this.label195);
-            this.tabPage6.Controls.Add(this.label214);
-            this.tabPage6.Controls.Add(this.label204);
             this.tabPage6.Controls.Add(this.label194);
             this.tabPage6.Controls.Add(this.label213);
             this.tabPage6.Controls.Add(this.label203);
@@ -2084,9 +2080,9 @@
             this.tabPage6.Controls.Add(this.label181);
             this.tabPage6.Controls.Add(this.label180);
             this.tabPage6.Location = new System.Drawing.Point(4, 25);
-            this.tabPage6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage6.Margin = new System.Windows.Forms.Padding(4);
             this.tabPage6.Name = "tabPage6";
-            this.tabPage6.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tabPage6.Padding = new System.Windows.Forms.Padding(4);
             this.tabPage6.Size = new System.Drawing.Size(903, 759);
             this.tabPage6.TabIndex = 5;
             this.tabPage6.Text = "раздаточной коробки";
@@ -2135,7 +2131,7 @@
             // label215
             // 
             this.label215.AutoSize = true;
-            this.label215.Location = new System.Drawing.Point(633, 528);
+            this.label215.Location = new System.Drawing.Point(633, 497);
             this.label215.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label215.Name = "label215";
             this.label215.Size = new System.Drawing.Size(20, 17);
@@ -2145,7 +2141,7 @@
             // label205
             // 
             this.label205.AutoSize = true;
-            this.label205.Location = new System.Drawing.Point(88, 528);
+            this.label205.Location = new System.Drawing.Point(88, 497);
             this.label205.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label205.Name = "label205";
             this.label205.Size = new System.Drawing.Size(201, 17);
@@ -2161,26 +2157,6 @@
             this.label195.Size = new System.Drawing.Size(20, 17);
             this.label195.TabIndex = 1;
             this.label195.Text = "...";
-            // 
-            // label214
-            // 
-            this.label214.AutoSize = true;
-            this.label214.Location = new System.Drawing.Point(633, 496);
-            this.label214.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label214.Name = "label214";
-            this.label214.Size = new System.Drawing.Size(20, 17);
-            this.label214.TabIndex = 1;
-            this.label214.Text = "...";
-            // 
-            // label204
-            // 
-            this.label204.AutoSize = true;
-            this.label204.Location = new System.Drawing.Point(88, 496);
-            this.label204.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label204.Name = "label204";
-            this.label204.Size = new System.Drawing.Size(411, 17);
-            this.label204.TabIndex = 1;
-            this.label204.Text = "Диаметр наибольшего колеса или корпуса дифференциала:";
             // 
             // label194
             // 
@@ -2418,7 +2394,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(912, 791);
             this.Controls.Add(this.tabControl1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "SingleResultForm";
             this.Text = "Результат рассчета конкретного случая";
             this.tabControl1.ResumeLayout(false);
@@ -2627,8 +2603,6 @@
         private System.Windows.Forms.Label label180;
         private System.Windows.Forms.Label label215;
         private System.Windows.Forms.Label label205;
-        private System.Windows.Forms.Label label214;
-        private System.Windows.Forms.Label label204;
         private System.Windows.Forms.Label label213;
         private System.Windows.Forms.Label label203;
         private System.Windows.Forms.Label label212;

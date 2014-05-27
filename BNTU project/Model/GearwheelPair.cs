@@ -156,6 +156,16 @@ namespace BNTU_project
             calc2_aw2_d(gearwheelPair1.beta_d, mn);
         }
 
+        public bool isValid()
+        {
+            var result = true;
+
+            if (_z_shest < 12)
+                result = false;
+
+            return result;
+        }
+
         public void calc2_aw2_d(double betd_d, double mn)
         {
             _aw2_d = (mn * _z_sum) / (2 * Math.Cos(DegreeToRadian(beta_d)));

@@ -72,7 +72,7 @@ namespace BNTU_project
                 mainForm.car.Ukp = double.Parse(textBox14.Text);
                 mainForm.car.kpd_tr = double.Parse(textBox16.Text);
             }
-            catch (FormatException ex)
+            catch (Exception ex)
             {
                 MessageBox.Show("Неверные входные данные");
             }

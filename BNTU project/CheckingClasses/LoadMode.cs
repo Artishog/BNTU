@@ -59,7 +59,7 @@ namespace BNTU_project
 
         private void calc_Mp()
         {
-            _Mp = Math.Min(_Mc, _Md);
+            _Mp = _Md;
         }
 
         private void calc_np(int np, double Ukp1)
@@ -141,12 +141,12 @@ namespace BNTU_project
         //Вычисляется по графикам, нужно будет сделать, пока оставлены заглушки
         private void calc_KPH()
         {
-            _KPH = 0.1;
+            _KPH = 0.09;
         }
 
         private void calc_KPF()
         {
-            _KPF = 0.01;
+            _KPF = 0.016;
         }
 
         //по таблице, пока заглушка

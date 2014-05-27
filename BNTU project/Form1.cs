@@ -22,6 +22,10 @@ namespace BNTU_project
 
         private LoadMode _loadMode = new LoadMode();
         private Contact _contact = new Contact();
+        private Flexion _flexion = new Flexion();
+        private Endurance _endurance = new Endurance();
+
+        private Steel _steel = new Steel();
 
         private Form carSettingsForm;
         private Form gearwheelSettingsForm;
@@ -67,12 +71,93 @@ namespace BNTU_project
             get { return _contact; }
             set { _contact = value; }
         }
+        public Flexion flexion
+        {
+            get { return _flexion; }
+            set { _flexion = value; }
+        }
+        public Endurance endurance
+        {
+            get { return _endurance; }
+            set { _endurance = value; }
+        }
+        public Steel steel
+        {
+            get { return _steel; }
+            set { _steel = value; }
+        }
         
         public Form1()
         {
             InitializeComponent();
 
             _transferGearbox = new TransferGearbox3Case(_car, _gearwheelPair1, _gearwheelPair2, differential);
+
+            х2Н4АToolStripMenuItem1.Checked = true;
+            steel.setCurrentSteelByGrade(х2Н4АToolStripMenuItem1.Text);
+
+            switch (transferGearbox.kinematicScheme)
+            {
+                case 1:
+                    panel1.BackColor = Color.DarkGray;
+                    panel2.BackColor = Color.White;
+                    panel3.BackColor = Color.White;
+                    panel4.BackColor = Color.White;
+                    panel5.BackColor = Color.White;
+                    panel6.BackColor = Color.White;
+
+                    transferGearbox = new TransferGearbox1Case(car, gearwheelPair1, gearwheelPair2, differential);
+
+                    break;
+                case 2:
+                    panel1.BackColor = Color.White;
+                    panel2.BackColor = Color.DarkGray;
+                    panel3.BackColor = Color.White;
+                    panel4.BackColor = Color.White;
+                    panel5.BackColor = Color.White;
+                    panel6.BackColor = Color.White;
+
+                    transferGearbox = new TransferGearbox2Case(car, gearwheelPair1, gearwheelPair2, differential);
+
+                    break;
+                case 3:
+                    panel1.BackColor = Color.White;
+                    panel2.BackColor = Color.White;
+                    panel3.BackColor = Color.DarkGray;
+                    panel4.BackColor = Color.White;
+                    panel5.BackColor = Color.White;
+                    panel6.BackColor = Color.White;
+
+                    transferGearbox = new TransferGearbox3Case(car, gearwheelPair1, gearwheelPair2, differential);
+
+                    break;
+                case 4:
+                    panel1.BackColor = Color.White;
+                    panel2.BackColor = Color.White;
+                    panel3.BackColor = Color.White;
+                    panel4.BackColor = Color.DarkGray;
+                    panel5.BackColor = Color.White;
+                    panel6.BackColor = Color.White;
+
+                    break;
+                case 5:
+                    panel1.BackColor = Color.White;
+                    panel2.BackColor = Color.White;
+                    panel3.BackColor = Color.White;
+                    panel4.BackColor = Color.White;
+                    panel5.BackColor = Color.DarkGray;
+                    panel6.BackColor = Color.White;
+
+                    break;
+                case 6:
+                    panel1.BackColor = Color.White;
+                    panel2.BackColor = Color.White;
+                    panel3.BackColor = Color.White;
+                    panel4.BackColor = Color.White;
+                    panel5.BackColor = Color.White;
+                    panel6.BackColor = Color.DarkGray;
+                    break;
+            }
 
             //Gearwhell and GearwhellPair parameters
             this.gearwheel.mn = 6;
@@ -183,18 +268,201 @@ namespace BNTU_project
                 calcAllParts();
             }
 
-            this.loadMode.calc_All(car.Memax, car.Ukp, gearwheelPair1.U_d, gearwheelPair2.U_d, car.ma, car.np, car.r0, car.U0, car.vehicleType, transferGearbox.kinematicScheme);
-            this.contact.calc_All(loadMode.Mp, gearwheelPair1.beta_d, gearwheelPair1.bw, loadMode.np, gearwheel.mn, 
-                loadMode.np, gearwheelPair2.z_kol, gearwheelPair2.z_shest, gearwheelPair1.d_shest);
+            calcCheckingClasses();
+
+            if (!contact.isValid(car.L0))
+                MessageBox.Show("Не выполняются условия по контактным напряжением");
+
+            if (!flexion.isValid(car.L0))
+                MessageBox.Show("Не выполняются условия по изгибным напряжениям");
+
+            if (!endurance.isValid(steel.currentSteel.PHlimM, steel.currentSteel.sigmaFlimM))
+                MessageBox.Show("Не выполняются условия по прочности");
+
+            if (!gearwheelPair1.isValid())
+                MessageBox.Show("Не выполняются условия по минимальному числу зубьев");
 
             Form singleCheckForm = new SingleCheckForm(this);
             singleCheckForm.Show();
+        }
+
+        public void calcCheckingClasses()
+        {
+            this.loadMode.calc_All(car.Memax, car.Ukp, gearwheelPair1.U_d, gearwheelPair2.U_d, car.ma, car.np, car.r0, car.U0, car.vehicleType, transferGearbox.kinematicScheme);
+
+            this.contact.calc_All(loadMode.Mp, gearwheelPair1.U_d, gearwheelPair1.beta_d, gearwheelPair1.bw, gearwheel.mn,
+                loadMode.np, gearwheelPair1.z_kol, gearwheelPair1.z_shest, gearwheelPair1.d_shest, gearwheelPair1.bf_shest,
+                gearwheelPair1.da_kol, car.Ukp, loadMode.ksi, car.r0, steel.currentSteel.PHlimb_star, loadMode.KPH, steel.currentSteel.NHO);
+
+            this.flexion.calc_All(gearwheelPair1.z_shest, gearwheelPair1.z_kol, gearwheelPair1.bf_shest, gearwheelPair1.bw, gearwheelPair1.beta_d,
+                contact.z_eps, contact.precision_plav, contact.K0_beta, contact.Kj_delta, contact.Kve, steel.currentSteel.sigmaFlimb_c_star,
+                contact.Ft, gearwheel.mn, car.Ukp, loadMode.ksi, loadMode.KPF, gearwheelPair1.U_d, gearwheelPair2.U_d, steel.currentSteel.NFO, contact.v, car.r0, car.U0, transferGearbox.kinematicScheme);
+
+            this.endurance.calc_All(loadMode.Mc, loadMode.Mp, flexion.sigmaF_shest, flexion.sigmaF_kol, contact.Ph_shest, contact.Ph_kol);
         }
 
         private void нагрузочныйРежимToolStripMenuItem_Click(object sender, EventArgs e)
         {
             LoadModeSettingsForm loadModeSettingsForm = new LoadModeSettingsForm(this);
             loadModeSettingsForm.Show();
+        }
+
+        private void х2Н4АToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            foreach (ToolStripMenuItem item in стальToolStripMenuItem.DropDownItems)
+            {
+                item.Checked = false;
+            }
+
+            х2Н4АToolStripMenuItem.Checked = true;
+            steel.setCurrentSteelByGrade(х2Н4АToolStripMenuItem.Text);
+        }
+
+        private void хН3АToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            foreach (ToolStripMenuItem item in стальToolStripMenuItem.DropDownItems)
+            {
+                item.Checked = false;
+            }
+
+            хН3АToolStripMenuItem.Checked = true;
+            steel.setCurrentSteelByGrade(хН3АToolStripMenuItem.Text);
+        }
+
+        private void xГНТАToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            foreach (ToolStripMenuItem item in стальToolStripMenuItem.DropDownItems)
+            {
+                item.Checked = false;
+            }
+
+            xГНТАToolStripMenuItem.Checked = true;
+            steel.setCurrentSteelByGrade(xГНТАToolStripMenuItem.Text);
+        }
+
+        private void хГН2ТАToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            foreach (ToolStripMenuItem item in стальToolStripMenuItem.DropDownItems)
+            {
+                item.Checked = false;
+            }
+
+            хГН2ТАToolStripMenuItem.Checked = true;
+            steel.setCurrentSteelByGrade(хГН2ТАToolStripMenuItem.Text);
+        }
+
+        private void хГТToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            foreach (ToolStripMenuItem item in стальToolStripMenuItem.DropDownItems)
+            {
+                item.Checked = false;
+            }
+
+            хГТToolStripMenuItem.Checked = true;
+            steel.setCurrentSteelByGrade(хГТToolStripMenuItem.Text);
+        }
+
+        private void х2Н4ВАToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            foreach (ToolStripMenuItem item in стальToolStripMenuItem.DropDownItems)
+            {
+                item.Checked = false;
+            }
+
+            х2Н4ВАToolStripMenuItem.Checked = true;
+            steel.setCurrentSteelByGrade(х2Н4ВАToolStripMenuItem.Text);
+        }
+
+        private void х2Н4АToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            foreach (ToolStripMenuItem item in стальToolStripMenuItem.DropDownItems)
+            {
+                item.Checked = false;
+            }
+
+            х2Н4АToolStripMenuItem1.Checked = true;
+            steel.setCurrentSteelByGrade(х2Н4АToolStripMenuItem1.Text);
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            panel1.BackColor = Color.DarkGray;
+            panel2.BackColor = Color.White;
+            panel3.BackColor = Color.White;
+            panel4.BackColor = Color.White;
+            panel5.BackColor = Color.White;
+            panel6.BackColor = Color.White;
+
+            transferGearbox = new TransferGearbox1Case(car, gearwheelPair1, gearwheelPair2, differential);
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            panel1.BackColor = Color.White;
+            panel2.BackColor = Color.DarkGray;
+            panel3.BackColor = Color.White;
+            panel4.BackColor = Color.White;
+            panel5.BackColor = Color.White;
+            panel6.BackColor = Color.White;
+
+            transferGearbox = new TransferGearbox2Case(car, gearwheelPair1, gearwheelPair2, differential);
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            panel1.BackColor = Color.White;
+            panel2.BackColor = Color.White;
+            panel3.BackColor = Color.DarkGray;
+            panel4.BackColor = Color.White;
+            panel5.BackColor = Color.White;
+            panel6.BackColor = Color.White;
+
+            transferGearbox = new TransferGearbox3Case(car, gearwheelPair1, gearwheelPair2, differential);
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            panel1.BackColor = Color.White;
+            panel2.BackColor = Color.White;
+            panel3.BackColor = Color.White;
+            panel4.BackColor = Color.DarkGray;
+            panel5.BackColor = Color.White;
+            panel6.BackColor = Color.White;
+
+            transferGearbox = new TransferGearbox4Case(car, gearwheelPair1, gearwheelPair2, differential);
+        }
+
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+            panel1.BackColor = Color.White;
+            panel2.BackColor = Color.White;
+            panel3.BackColor = Color.White;
+            panel4.BackColor = Color.White;
+            panel5.BackColor = Color.DarkGray;
+            panel6.BackColor = Color.White;
+
+            transferGearbox = new TransferGearbox5Case(car, gearwheelPair1, gearwheelPair2, differential);
+        }
+
+        private void pictureBox6_Click(object sender, EventArgs e)
+        {
+            panel1.BackColor = Color.White;
+            panel2.BackColor = Color.White;
+            panel3.BackColor = Color.White;
+            panel4.BackColor = Color.White;
+            panel5.BackColor = Color.White;
+            panel6.BackColor = Color.DarkGray;
+
+            transferGearbox = new TransferGearbox6Case(car, gearwheelPair1, gearwheelPair2, differential);
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            OptimizationManager optimizationManager = new OptimizationManager(this);
+            optimizationManager.startOptimizationCicle();
+
+            Form singleResultForm = new SingleResultForm(this);
+            singleResultForm.Show();
         }
 
     }
