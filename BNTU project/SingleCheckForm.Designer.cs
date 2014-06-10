@@ -93,90 +93,90 @@
             this.label56 = new System.Windows.Forms.Label();
             this.label62 = new System.Windows.Forms.Label();
             this.label55 = new System.Windows.Forms.Label();
+            this.label80 = new System.Windows.Forms.Label();
+            this.label79 = new System.Windows.Forms.Label();
+            this.label78 = new System.Windows.Forms.Label();
+            this.label77 = new System.Windows.Forms.Label();
+            this.label76 = new System.Windows.Forms.Label();
+            this.label75 = new System.Windows.Forms.Label();
+            this.label74 = new System.Windows.Forms.Label();
+            this.label73 = new System.Windows.Forms.Label();
+            this.label72 = new System.Windows.Forms.Label();
+            this.label71 = new System.Windows.Forms.Label();
+            this.label70 = new System.Windows.Forms.Label();
+            this.label69 = new System.Windows.Forms.Label();
             this.label68 = new System.Windows.Forms.Label();
             this.label61 = new System.Windows.Forms.Label();
             this.label54 = new System.Windows.Forms.Label();
             this.label40 = new System.Windows.Forms.Label();
             this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.label69 = new System.Windows.Forms.Label();
-            this.label70 = new System.Windows.Forms.Label();
-            this.label71 = new System.Windows.Forms.Label();
-            this.label72 = new System.Windows.Forms.Label();
-            this.label73 = new System.Windows.Forms.Label();
-            this.label74 = new System.Windows.Forms.Label();
-            this.label75 = new System.Windows.Forms.Label();
-            this.label76 = new System.Windows.Forms.Label();
-            this.label77 = new System.Windows.Forms.Label();
-            this.label78 = new System.Windows.Forms.Label();
-            this.label79 = new System.Windows.Forms.Label();
-            this.label80 = new System.Windows.Forms.Label();
-            this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.label82 = new System.Windows.Forms.Label();
-            this.label83 = new System.Windows.Forms.Label();
-            this.label84 = new System.Windows.Forms.Label();
-            this.label85 = new System.Windows.Forms.Label();
-            this.label86 = new System.Windows.Forms.Label();
-            this.label87 = new System.Windows.Forms.Label();
-            this.label88 = new System.Windows.Forms.Label();
-            this.label89 = new System.Windows.Forms.Label();
-            this.label90 = new System.Windows.Forms.Label();
-            this.label91 = new System.Windows.Forms.Label();
-            this.label92 = new System.Windows.Forms.Label();
-            this.label93 = new System.Windows.Forms.Label();
-            this.label94 = new System.Windows.Forms.Label();
-            this.label95 = new System.Windows.Forms.Label();
-            this.label96 = new System.Windows.Forms.Label();
-            this.label97 = new System.Windows.Forms.Label();
-            this.label98 = new System.Windows.Forms.Label();
-            this.label99 = new System.Windows.Forms.Label();
-            this.label100 = new System.Windows.Forms.Label();
-            this.label101 = new System.Windows.Forms.Label();
-            this.label102 = new System.Windows.Forms.Label();
-            this.label103 = new System.Windows.Forms.Label();
-            this.label104 = new System.Windows.Forms.Label();
-            this.label105 = new System.Windows.Forms.Label();
-            this.label106 = new System.Windows.Forms.Label();
-            this.label108 = new System.Windows.Forms.Label();
-            this.label109 = new System.Windows.Forms.Label();
-            this.label107 = new System.Windows.Forms.Label();
-            this.label110 = new System.Windows.Forms.Label();
-            this.label111 = new System.Windows.Forms.Label();
-            this.label112 = new System.Windows.Forms.Label();
-            this.label113 = new System.Windows.Forms.Label();
-            this.label114 = new System.Windows.Forms.Label();
-            this.label115 = new System.Windows.Forms.Label();
-            this.label116 = new System.Windows.Forms.Label();
-            this.label117 = new System.Windows.Forms.Label();
-            this.label118 = new System.Windows.Forms.Label();
-            this.label119 = new System.Windows.Forms.Label();
-            this.label120 = new System.Windows.Forms.Label();
-            this.label121 = new System.Windows.Forms.Label();
-            this.label122 = new System.Windows.Forms.Label();
-            this.label123 = new System.Windows.Forms.Label();
-            this.label124 = new System.Windows.Forms.Label();
-            this.label125 = new System.Windows.Forms.Label();
-            this.label126 = new System.Windows.Forms.Label();
-            this.label127 = new System.Windows.Forms.Label();
-            this.label128 = new System.Windows.Forms.Label();
-            this.label129 = new System.Windows.Forms.Label();
-            this.label130 = new System.Windows.Forms.Label();
-            this.label131 = new System.Windows.Forms.Label();
-            this.label132 = new System.Windows.Forms.Label();
             this.label133 = new System.Windows.Forms.Label();
-            this.label43 = new System.Windows.Forms.Label();
-            this.label57 = new System.Windows.Forms.Label();
-            this.label81 = new System.Windows.Forms.Label();
-            this.label134 = new System.Windows.Forms.Label();
-            this.label135 = new System.Windows.Forms.Label();
-            this.label136 = new System.Windows.Forms.Label();
-            this.label137 = new System.Windows.Forms.Label();
-            this.label139 = new System.Windows.Forms.Label();
-            this.label140 = new System.Windows.Forms.Label();
-            this.label141 = new System.Windows.Forms.Label();
-            this.label142 = new System.Windows.Forms.Label();
-            this.label143 = new System.Windows.Forms.Label();
-            this.label144 = new System.Windows.Forms.Label();
+            this.label132 = new System.Windows.Forms.Label();
+            this.label131 = new System.Windows.Forms.Label();
+            this.label130 = new System.Windows.Forms.Label();
+            this.label129 = new System.Windows.Forms.Label();
+            this.label128 = new System.Windows.Forms.Label();
+            this.label127 = new System.Windows.Forms.Label();
+            this.label126 = new System.Windows.Forms.Label();
+            this.label125 = new System.Windows.Forms.Label();
+            this.label124 = new System.Windows.Forms.Label();
+            this.label123 = new System.Windows.Forms.Label();
+            this.label122 = new System.Windows.Forms.Label();
+            this.label121 = new System.Windows.Forms.Label();
+            this.label120 = new System.Windows.Forms.Label();
+            this.label119 = new System.Windows.Forms.Label();
+            this.label118 = new System.Windows.Forms.Label();
+            this.label117 = new System.Windows.Forms.Label();
+            this.label116 = new System.Windows.Forms.Label();
+            this.label115 = new System.Windows.Forms.Label();
+            this.label114 = new System.Windows.Forms.Label();
+            this.label113 = new System.Windows.Forms.Label();
+            this.label112 = new System.Windows.Forms.Label();
+            this.label111 = new System.Windows.Forms.Label();
+            this.label110 = new System.Windows.Forms.Label();
+            this.label107 = new System.Windows.Forms.Label();
+            this.label109 = new System.Windows.Forms.Label();
+            this.label106 = new System.Windows.Forms.Label();
+            this.label105 = new System.Windows.Forms.Label();
+            this.label104 = new System.Windows.Forms.Label();
+            this.label103 = new System.Windows.Forms.Label();
+            this.label102 = new System.Windows.Forms.Label();
+            this.label101 = new System.Windows.Forms.Label();
+            this.label100 = new System.Windows.Forms.Label();
+            this.label99 = new System.Windows.Forms.Label();
+            this.label98 = new System.Windows.Forms.Label();
+            this.label97 = new System.Windows.Forms.Label();
+            this.label96 = new System.Windows.Forms.Label();
+            this.label95 = new System.Windows.Forms.Label();
+            this.label94 = new System.Windows.Forms.Label();
+            this.label93 = new System.Windows.Forms.Label();
+            this.label92 = new System.Windows.Forms.Label();
+            this.label91 = new System.Windows.Forms.Label();
+            this.label90 = new System.Windows.Forms.Label();
+            this.label89 = new System.Windows.Forms.Label();
+            this.label88 = new System.Windows.Forms.Label();
+            this.label87 = new System.Windows.Forms.Label();
+            this.label86 = new System.Windows.Forms.Label();
+            this.label85 = new System.Windows.Forms.Label();
+            this.label84 = new System.Windows.Forms.Label();
+            this.label83 = new System.Windows.Forms.Label();
+            this.label108 = new System.Windows.Forms.Label();
+            this.label82 = new System.Windows.Forms.Label();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
             this.label145 = new System.Windows.Forms.Label();
+            this.label144 = new System.Windows.Forms.Label();
+            this.label143 = new System.Windows.Forms.Label();
+            this.label142 = new System.Windows.Forms.Label();
+            this.label141 = new System.Windows.Forms.Label();
+            this.label140 = new System.Windows.Forms.Label();
+            this.label139 = new System.Windows.Forms.Label();
+            this.label137 = new System.Windows.Forms.Label();
+            this.label136 = new System.Windows.Forms.Label();
+            this.label135 = new System.Windows.Forms.Label();
+            this.label134 = new System.Windows.Forms.Label();
+            this.label81 = new System.Windows.Forms.Label();
+            this.label57 = new System.Windows.Forms.Label();
+            this.label43 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -922,6 +922,126 @@
             this.label55.TabIndex = 10;
             this.label55.Text = "...";
             // 
+            // label80
+            // 
+            this.label80.AutoSize = true;
+            this.label80.Location = new System.Drawing.Point(851, 816);
+            this.label80.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label80.Name = "label80";
+            this.label80.Size = new System.Drawing.Size(20, 17);
+            this.label80.TabIndex = 10;
+            this.label80.Text = "...";
+            // 
+            // label79
+            // 
+            this.label79.AutoSize = true;
+            this.label79.Location = new System.Drawing.Point(851, 784);
+            this.label79.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label79.Name = "label79";
+            this.label79.Size = new System.Drawing.Size(20, 17);
+            this.label79.TabIndex = 10;
+            this.label79.Text = "...";
+            // 
+            // label78
+            // 
+            this.label78.AutoSize = true;
+            this.label78.Location = new System.Drawing.Point(851, 752);
+            this.label78.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label78.Name = "label78";
+            this.label78.Size = new System.Drawing.Size(20, 17);
+            this.label78.TabIndex = 10;
+            this.label78.Text = "...";
+            // 
+            // label77
+            // 
+            this.label77.AutoSize = true;
+            this.label77.Location = new System.Drawing.Point(851, 720);
+            this.label77.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label77.Name = "label77";
+            this.label77.Size = new System.Drawing.Size(20, 17);
+            this.label77.TabIndex = 10;
+            this.label77.Text = "...";
+            // 
+            // label76
+            // 
+            this.label76.AutoSize = true;
+            this.label76.Location = new System.Drawing.Point(851, 688);
+            this.label76.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label76.Name = "label76";
+            this.label76.Size = new System.Drawing.Size(20, 17);
+            this.label76.TabIndex = 10;
+            this.label76.Text = "...";
+            // 
+            // label75
+            // 
+            this.label75.AutoSize = true;
+            this.label75.Location = new System.Drawing.Point(851, 657);
+            this.label75.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label75.Name = "label75";
+            this.label75.Size = new System.Drawing.Size(20, 17);
+            this.label75.TabIndex = 10;
+            this.label75.Text = "...";
+            // 
+            // label74
+            // 
+            this.label74.AutoSize = true;
+            this.label74.Location = new System.Drawing.Point(851, 625);
+            this.label74.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label74.Name = "label74";
+            this.label74.Size = new System.Drawing.Size(20, 17);
+            this.label74.TabIndex = 10;
+            this.label74.Text = "...";
+            // 
+            // label73
+            // 
+            this.label73.AutoSize = true;
+            this.label73.Location = new System.Drawing.Point(851, 593);
+            this.label73.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label73.Name = "label73";
+            this.label73.Size = new System.Drawing.Size(20, 17);
+            this.label73.TabIndex = 10;
+            this.label73.Text = "...";
+            // 
+            // label72
+            // 
+            this.label72.AutoSize = true;
+            this.label72.Location = new System.Drawing.Point(851, 561);
+            this.label72.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label72.Name = "label72";
+            this.label72.Size = new System.Drawing.Size(20, 17);
+            this.label72.TabIndex = 10;
+            this.label72.Text = "...";
+            // 
+            // label71
+            // 
+            this.label71.AutoSize = true;
+            this.label71.Location = new System.Drawing.Point(851, 529);
+            this.label71.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label71.Name = "label71";
+            this.label71.Size = new System.Drawing.Size(20, 17);
+            this.label71.TabIndex = 10;
+            this.label71.Text = "...";
+            // 
+            // label70
+            // 
+            this.label70.AutoSize = true;
+            this.label70.Location = new System.Drawing.Point(851, 497);
+            this.label70.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label70.Name = "label70";
+            this.label70.Size = new System.Drawing.Size(20, 17);
+            this.label70.TabIndex = 10;
+            this.label70.Text = "...";
+            // 
+            // label69
+            // 
+            this.label69.AutoSize = true;
+            this.label69.Location = new System.Drawing.Point(851, 465);
+            this.label69.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label69.Name = "label69";
+            this.label69.Size = new System.Drawing.Size(20, 17);
+            this.label69.TabIndex = 10;
+            this.label69.Text = "...";
+            // 
             // label68
             // 
             this.label68.AutoSize = true;
@@ -1023,125 +1143,526 @@
             this.tabPage3.Text = "Проверка на изгиб";
             this.tabPage3.UseVisualStyleBackColor = true;
             // 
-            // label69
+            // label133
             // 
-            this.label69.AutoSize = true;
-            this.label69.Location = new System.Drawing.Point(851, 465);
-            this.label69.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label69.Name = "label69";
-            this.label69.Size = new System.Drawing.Size(20, 17);
-            this.label69.TabIndex = 10;
-            this.label69.Text = "...";
+            this.label133.AutoSize = true;
+            this.label133.Location = new System.Drawing.Point(851, 832);
+            this.label133.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label133.Name = "label133";
+            this.label133.Size = new System.Drawing.Size(20, 17);
+            this.label133.TabIndex = 18;
+            this.label133.Text = "...";
             // 
-            // label70
+            // label132
             // 
-            this.label70.AutoSize = true;
-            this.label70.Location = new System.Drawing.Point(851, 497);
-            this.label70.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label70.Name = "label70";
-            this.label70.Size = new System.Drawing.Size(20, 17);
-            this.label70.TabIndex = 10;
-            this.label70.Text = "...";
+            this.label132.AutoSize = true;
+            this.label132.Location = new System.Drawing.Point(851, 799);
+            this.label132.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label132.Name = "label132";
+            this.label132.Size = new System.Drawing.Size(20, 17);
+            this.label132.TabIndex = 18;
+            this.label132.Text = "...";
             // 
-            // label71
+            // label131
             // 
-            this.label71.AutoSize = true;
-            this.label71.Location = new System.Drawing.Point(851, 529);
-            this.label71.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label71.Name = "label71";
-            this.label71.Size = new System.Drawing.Size(20, 17);
-            this.label71.TabIndex = 10;
-            this.label71.Text = "...";
+            this.label131.AutoSize = true;
+            this.label131.Location = new System.Drawing.Point(851, 767);
+            this.label131.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label131.Name = "label131";
+            this.label131.Size = new System.Drawing.Size(20, 17);
+            this.label131.TabIndex = 18;
+            this.label131.Text = "...";
             // 
-            // label72
+            // label130
             // 
-            this.label72.AutoSize = true;
-            this.label72.Location = new System.Drawing.Point(851, 561);
-            this.label72.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label72.Name = "label72";
-            this.label72.Size = new System.Drawing.Size(20, 17);
-            this.label72.TabIndex = 10;
-            this.label72.Text = "...";
+            this.label130.AutoSize = true;
+            this.label130.Location = new System.Drawing.Point(851, 735);
+            this.label130.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label130.Name = "label130";
+            this.label130.Size = new System.Drawing.Size(20, 17);
+            this.label130.TabIndex = 18;
+            this.label130.Text = "...";
             // 
-            // label73
+            // label129
             // 
-            this.label73.AutoSize = true;
-            this.label73.Location = new System.Drawing.Point(851, 593);
-            this.label73.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label73.Name = "label73";
-            this.label73.Size = new System.Drawing.Size(20, 17);
-            this.label73.TabIndex = 10;
-            this.label73.Text = "...";
+            this.label129.AutoSize = true;
+            this.label129.Location = new System.Drawing.Point(851, 703);
+            this.label129.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label129.Name = "label129";
+            this.label129.Size = new System.Drawing.Size(20, 17);
+            this.label129.TabIndex = 18;
+            this.label129.Text = "...";
             // 
-            // label74
+            // label128
             // 
-            this.label74.AutoSize = true;
-            this.label74.Location = new System.Drawing.Point(851, 625);
-            this.label74.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label74.Name = "label74";
-            this.label74.Size = new System.Drawing.Size(20, 17);
-            this.label74.TabIndex = 10;
-            this.label74.Text = "...";
+            this.label128.AutoSize = true;
+            this.label128.Location = new System.Drawing.Point(851, 671);
+            this.label128.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label128.Name = "label128";
+            this.label128.Size = new System.Drawing.Size(20, 17);
+            this.label128.TabIndex = 18;
+            this.label128.Text = "...";
             // 
-            // label75
+            // label127
             // 
-            this.label75.AutoSize = true;
-            this.label75.Location = new System.Drawing.Point(851, 657);
-            this.label75.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label75.Name = "label75";
-            this.label75.Size = new System.Drawing.Size(20, 17);
-            this.label75.TabIndex = 10;
-            this.label75.Text = "...";
+            this.label127.AutoSize = true;
+            this.label127.Location = new System.Drawing.Point(851, 639);
+            this.label127.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label127.Name = "label127";
+            this.label127.Size = new System.Drawing.Size(20, 17);
+            this.label127.TabIndex = 18;
+            this.label127.Text = "...";
             // 
-            // label76
+            // label126
             // 
-            this.label76.AutoSize = true;
-            this.label76.Location = new System.Drawing.Point(851, 688);
-            this.label76.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label76.Name = "label76";
-            this.label76.Size = new System.Drawing.Size(20, 17);
-            this.label76.TabIndex = 10;
-            this.label76.Text = "...";
+            this.label126.AutoSize = true;
+            this.label126.Location = new System.Drawing.Point(851, 607);
+            this.label126.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label126.Name = "label126";
+            this.label126.Size = new System.Drawing.Size(20, 17);
+            this.label126.TabIndex = 18;
+            this.label126.Text = "...";
             // 
-            // label77
+            // label125
             // 
-            this.label77.AutoSize = true;
-            this.label77.Location = new System.Drawing.Point(851, 720);
-            this.label77.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label77.Name = "label77";
-            this.label77.Size = new System.Drawing.Size(20, 17);
-            this.label77.TabIndex = 10;
-            this.label77.Text = "...";
+            this.label125.AutoSize = true;
+            this.label125.Location = new System.Drawing.Point(851, 575);
+            this.label125.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label125.Name = "label125";
+            this.label125.Size = new System.Drawing.Size(20, 17);
+            this.label125.TabIndex = 18;
+            this.label125.Text = "...";
             // 
-            // label78
+            // label124
             // 
-            this.label78.AutoSize = true;
-            this.label78.Location = new System.Drawing.Point(851, 752);
-            this.label78.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label78.Name = "label78";
-            this.label78.Size = new System.Drawing.Size(20, 17);
-            this.label78.TabIndex = 10;
-            this.label78.Text = "...";
+            this.label124.AutoSize = true;
+            this.label124.Location = new System.Drawing.Point(851, 543);
+            this.label124.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label124.Name = "label124";
+            this.label124.Size = new System.Drawing.Size(20, 17);
+            this.label124.TabIndex = 18;
+            this.label124.Text = "...";
             // 
-            // label79
+            // label123
             // 
-            this.label79.AutoSize = true;
-            this.label79.Location = new System.Drawing.Point(851, 784);
-            this.label79.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label79.Name = "label79";
-            this.label79.Size = new System.Drawing.Size(20, 17);
-            this.label79.TabIndex = 10;
-            this.label79.Text = "...";
+            this.label123.AutoSize = true;
+            this.label123.Location = new System.Drawing.Point(851, 511);
+            this.label123.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label123.Name = "label123";
+            this.label123.Size = new System.Drawing.Size(20, 17);
+            this.label123.TabIndex = 18;
+            this.label123.Text = "...";
             // 
-            // label80
+            // label122
             // 
-            this.label80.AutoSize = true;
-            this.label80.Location = new System.Drawing.Point(851, 816);
-            this.label80.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label80.Name = "label80";
-            this.label80.Size = new System.Drawing.Size(20, 17);
-            this.label80.TabIndex = 10;
-            this.label80.Text = "...";
+            this.label122.AutoSize = true;
+            this.label122.Location = new System.Drawing.Point(851, 478);
+            this.label122.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label122.Name = "label122";
+            this.label122.Size = new System.Drawing.Size(20, 17);
+            this.label122.TabIndex = 18;
+            this.label122.Text = "...";
+            // 
+            // label121
+            // 
+            this.label121.AutoSize = true;
+            this.label121.Location = new System.Drawing.Point(851, 447);
+            this.label121.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label121.Name = "label121";
+            this.label121.Size = new System.Drawing.Size(20, 17);
+            this.label121.TabIndex = 18;
+            this.label121.Text = "...";
+            // 
+            // label120
+            // 
+            this.label120.AutoSize = true;
+            this.label120.Location = new System.Drawing.Point(851, 415);
+            this.label120.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label120.Name = "label120";
+            this.label120.Size = new System.Drawing.Size(20, 17);
+            this.label120.TabIndex = 18;
+            this.label120.Text = "...";
+            // 
+            // label119
+            // 
+            this.label119.AutoSize = true;
+            this.label119.Location = new System.Drawing.Point(851, 383);
+            this.label119.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label119.Name = "label119";
+            this.label119.Size = new System.Drawing.Size(20, 17);
+            this.label119.TabIndex = 18;
+            this.label119.Text = "...";
+            // 
+            // label118
+            // 
+            this.label118.AutoSize = true;
+            this.label118.Location = new System.Drawing.Point(851, 351);
+            this.label118.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label118.Name = "label118";
+            this.label118.Size = new System.Drawing.Size(20, 17);
+            this.label118.TabIndex = 18;
+            this.label118.Text = "...";
+            // 
+            // label117
+            // 
+            this.label117.AutoSize = true;
+            this.label117.Location = new System.Drawing.Point(851, 319);
+            this.label117.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label117.Name = "label117";
+            this.label117.Size = new System.Drawing.Size(20, 17);
+            this.label117.TabIndex = 18;
+            this.label117.Text = "...";
+            // 
+            // label116
+            // 
+            this.label116.AutoSize = true;
+            this.label116.Location = new System.Drawing.Point(851, 287);
+            this.label116.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label116.Name = "label116";
+            this.label116.Size = new System.Drawing.Size(20, 17);
+            this.label116.TabIndex = 18;
+            this.label116.Text = "...";
+            // 
+            // label115
+            // 
+            this.label115.AutoSize = true;
+            this.label115.Location = new System.Drawing.Point(851, 255);
+            this.label115.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label115.Name = "label115";
+            this.label115.Size = new System.Drawing.Size(20, 17);
+            this.label115.TabIndex = 18;
+            this.label115.Text = "...";
+            // 
+            // label114
+            // 
+            this.label114.AutoSize = true;
+            this.label114.Location = new System.Drawing.Point(851, 223);
+            this.label114.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label114.Name = "label114";
+            this.label114.Size = new System.Drawing.Size(20, 17);
+            this.label114.TabIndex = 18;
+            this.label114.Text = "...";
+            // 
+            // label113
+            // 
+            this.label113.AutoSize = true;
+            this.label113.Location = new System.Drawing.Point(851, 191);
+            this.label113.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label113.Name = "label113";
+            this.label113.Size = new System.Drawing.Size(20, 17);
+            this.label113.TabIndex = 18;
+            this.label113.Text = "...";
+            // 
+            // label112
+            // 
+            this.label112.AutoSize = true;
+            this.label112.Location = new System.Drawing.Point(851, 159);
+            this.label112.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label112.Name = "label112";
+            this.label112.Size = new System.Drawing.Size(20, 17);
+            this.label112.TabIndex = 18;
+            this.label112.Text = "...";
+            // 
+            // label111
+            // 
+            this.label111.AutoSize = true;
+            this.label111.Location = new System.Drawing.Point(851, 127);
+            this.label111.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label111.Name = "label111";
+            this.label111.Size = new System.Drawing.Size(20, 17);
+            this.label111.TabIndex = 18;
+            this.label111.Text = "...";
+            // 
+            // label110
+            // 
+            this.label110.AutoSize = true;
+            this.label110.Location = new System.Drawing.Point(851, 94);
+            this.label110.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label110.Name = "label110";
+            this.label110.Size = new System.Drawing.Size(20, 17);
+            this.label110.TabIndex = 18;
+            this.label110.Text = "...";
+            // 
+            // label107
+            // 
+            this.label107.AutoSize = true;
+            this.label107.Location = new System.Drawing.Point(851, 62);
+            this.label107.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label107.Name = "label107";
+            this.label107.Size = new System.Drawing.Size(20, 17);
+            this.label107.TabIndex = 18;
+            this.label107.Text = "...";
+            // 
+            // label109
+            // 
+            this.label109.AutoSize = true;
+            this.label109.Location = new System.Drawing.Point(851, 30);
+            this.label109.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label109.Name = "label109";
+            this.label109.Size = new System.Drawing.Size(20, 17);
+            this.label109.TabIndex = 18;
+            this.label109.Text = "...";
+            // 
+            // label106
+            // 
+            this.label106.AutoSize = true;
+            this.label106.Location = new System.Drawing.Point(51, 832);
+            this.label106.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label106.Name = "label106";
+            this.label106.Size = new System.Drawing.Size(480, 17);
+            this.label106.TabIndex = 17;
+            this.label106.Text = "Пробег автомобиля (км) до усталостной поломки зуба ведмого колеса:";
+            // 
+            // label105
+            // 
+            this.label105.AutoSize = true;
+            this.label105.Location = new System.Drawing.Point(51, 799);
+            this.label105.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label105.Name = "label105";
+            this.label105.Size = new System.Drawing.Size(489, 17);
+            this.label105.TabIndex = 17;
+            this.label105.Text = "Пробег автомобиля (км) до усталостной поломки зуба ведущего колеса:";
+            // 
+            // label104
+            // 
+            this.label104.AutoSize = true;
+            this.label104.Location = new System.Drawing.Point(51, 767);
+            this.label104.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label104.Name = "label104";
+            this.label104.Size = new System.Drawing.Size(301, 17);
+            this.label104.TabIndex = 17;
+            this.label104.Text = "Циклостойкость по изгибным напряжениям:";
+            // 
+            // label103
+            // 
+            this.label103.AutoSize = true;
+            this.label103.Location = new System.Drawing.Point(51, 735);
+            this.label103.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label103.Name = "label103";
+            this.label103.Size = new System.Drawing.Size(410, 17);
+            this.label103.TabIndex = 17;
+            this.label103.Text = "Ресурс ведомого зубчатого колеса по усталости при изгибе:";
+            // 
+            // label102
+            // 
+            this.label102.AutoSize = true;
+            this.label102.Location = new System.Drawing.Point(51, 703);
+            this.label102.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label102.Name = "label102";
+            this.label102.Size = new System.Drawing.Size(411, 17);
+            this.label102.TabIndex = 17;
+            this.label102.Text = "Ресурс ведущего зубчатого колеса по усталости при изгибе:";
+            // 
+            // label101
+            // 
+            this.label101.AutoSize = true;
+            this.label101.Location = new System.Drawing.Point(51, 671);
+            this.label101.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label101.Name = "label101";
+            this.label101.Size = new System.Drawing.Size(226, 17);
+            this.label101.TabIndex = 17;
+            this.label101.Text = "Предельное напряжение изгиба:";
+            // 
+            // label100
+            // 
+            this.label100.AutoSize = true;
+            this.label100.Location = new System.Drawing.Point(51, 639);
+            this.label100.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label100.Name = "label100";
+            this.label100.Size = new System.Drawing.Size(346, 17);
+            this.label100.TabIndex = 17;
+            this.label100.Text = "Коэффициент учитывающий характер нагружения:";
+            // 
+            // label99
+            // 
+            this.label99.AutoSize = true;
+            this.label99.Location = new System.Drawing.Point(51, 607);
+            this.label99.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label99.Name = "label99";
+            this.label99.Size = new System.Drawing.Size(331, 17);
+            this.label99.TabIndex = 17;
+            this.label99.Text = "Расчетное напряжение изгиба ведомого колеса:";
+            // 
+            // label98
+            // 
+            this.label98.AutoSize = true;
+            this.label98.Location = new System.Drawing.Point(51, 575);
+            this.label98.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label98.Name = "label98";
+            this.label98.Size = new System.Drawing.Size(332, 17);
+            this.label98.TabIndex = 17;
+            this.label98.Text = "Расчетное напряжение изгиба ведущего колеса:";
+            // 
+            // label97
+            // 
+            this.label97.AutoSize = true;
+            this.label97.Location = new System.Drawing.Point(51, 543);
+            this.label97.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label97.Name = "label97";
+            this.label97.Size = new System.Drawing.Size(608, 17);
+            this.label97.TabIndex = 17;
+            this.label97.Text = "Коэффициент учитывающий особенности технологии обработки переходной кривой зуба:";
+            // 
+            // label96
+            // 
+            this.label96.AutoSize = true;
+            this.label96.Location = new System.Drawing.Point(51, 511);
+            this.label96.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label96.Name = "label96";
+            this.label96.Size = new System.Drawing.Size(434, 17);
+            this.label96.TabIndex = 17;
+            this.label96.Text = "Коэффициент учитывающий влияние размеров зубчатых колес:";
+            // 
+            // label95
+            // 
+            this.label95.AutoSize = true;
+            this.label95.Location = new System.Drawing.Point(51, 478);
+            this.label95.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label95.Name = "label95";
+            this.label95.Size = new System.Drawing.Size(481, 17);
+            this.label95.TabIndex = 17;
+            this.label95.Text = "Коэффициент учитывающий влияние сил трения для ведомого колеса:";
+            // 
+            // label94
+            // 
+            this.label94.AutoSize = true;
+            this.label94.Location = new System.Drawing.Point(51, 127);
+            this.label94.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label94.Name = "label94";
+            this.label94.Size = new System.Drawing.Size(600, 17);
+            this.label94.TabIndex = 17;
+            this.label94.Text = "Коэффициент учитывающий параметры парного зубчатого колеса для ведущего колеса:";
+            // 
+            // label93
+            // 
+            this.label93.AutoSize = true;
+            this.label93.Location = new System.Drawing.Point(51, 447);
+            this.label93.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label93.Name = "label93";
+            this.label93.Size = new System.Drawing.Size(482, 17);
+            this.label93.TabIndex = 17;
+            this.label93.Text = "Коэффициент учитывающий влияние сил трения для ведущего колеса:";
+            // 
+            // label92
+            // 
+            this.label92.AutoSize = true;
+            this.label92.Location = new System.Drawing.Point(51, 415);
+            this.label92.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label92.Name = "label92";
+            this.label92.Size = new System.Drawing.Size(562, 17);
+            this.label92.TabIndex = 17;
+            this.label92.Text = "Коэффициент учитывающий влияние приработки зубьев в процессе эксплуатации:";
+            // 
+            // label91
+            // 
+            this.label91.AutoSize = true;
+            this.label91.Location = new System.Drawing.Point(51, 383);
+            this.label91.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label91.Name = "label91";
+            this.label91.Size = new System.Drawing.Size(616, 17);
+            this.label91.TabIndex = 17;
+            this.label91.Text = "Коэффициент учитывающий неравномерность распределения нагрузки по ширине венцов:";
+            // 
+            // label90
+            // 
+            this.label90.AutoSize = true;
+            this.label90.Location = new System.Drawing.Point(51, 351);
+            this.label90.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label90.Name = "label90";
+            this.label90.Size = new System.Drawing.Size(436, 17);
+            this.label90.TabIndex = 17;
+            this.label90.Text = "Коэффициент учитывающий вид зуба и точно его изготовления:";
+            // 
+            // label89
+            // 
+            this.label89.AutoSize = true;
+            this.label89.Location = new System.Drawing.Point(51, 319);
+            this.label89.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label89.Name = "label89";
+            this.label89.Size = new System.Drawing.Size(333, 17);
+            this.label89.TabIndex = 17;
+            this.label89.Text = "Коэффициент учитывающий перекрытие зубьев:";
+            // 
+            // label88
+            // 
+            this.label88.AutoSize = true;
+            this.label88.Location = new System.Drawing.Point(51, 287);
+            this.label88.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label88.Name = "label88";
+            this.label88.Size = new System.Drawing.Size(333, 17);
+            this.label88.TabIndex = 17;
+            this.label88.Text = "Единичное напряжение изгиба ведомого колеса:";
+            // 
+            // label87
+            // 
+            this.label87.AutoSize = true;
+            this.label87.Location = new System.Drawing.Point(51, 255);
+            this.label87.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label87.Name = "label87";
+            this.label87.Size = new System.Drawing.Size(334, 17);
+            this.label87.TabIndex = 17;
+            this.label87.Text = "Единичное напряжение изгиба ведущего колеса:";
+            // 
+            // label86
+            // 
+            this.label86.AutoSize = true;
+            this.label86.Location = new System.Drawing.Point(51, 223);
+            this.label86.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label86.Name = "label86";
+            this.label86.Size = new System.Drawing.Size(319, 17);
+            this.label86.TabIndex = 17;
+            this.label86.Text = "Эквивалентное число зубьев ведомого колеса:";
+            // 
+            // label85
+            // 
+            this.label85.AutoSize = true;
+            this.label85.Location = new System.Drawing.Point(51, 191);
+            this.label85.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label85.Name = "label85";
+            this.label85.Size = new System.Drawing.Size(320, 17);
+            this.label85.TabIndex = 17;
+            this.label85.Text = "Эквивалентное число зубьев ведущего колеса:";
+            // 
+            // label84
+            // 
+            this.label84.AutoSize = true;
+            this.label84.Location = new System.Drawing.Point(51, 159);
+            this.label84.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label84.Name = "label84";
+            this.label84.Size = new System.Drawing.Size(599, 17);
+            this.label84.TabIndex = 17;
+            this.label84.Text = "Коэффициент учитывающий параметры парного зубчатого колеса для ведомого колеса:";
+            // 
+            // label83
+            // 
+            this.label83.AutoSize = true;
+            this.label83.Location = new System.Drawing.Point(51, 94);
+            this.label83.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label83.Name = "label83";
+            this.label83.Size = new System.Drawing.Size(554, 17);
+            this.label83.TabIndex = 17;
+            this.label83.Text = "Номинальное значение коэффициента напряжения изгиба зуба ведомого колеса:";
+            // 
+            // label108
+            // 
+            this.label108.AutoSize = true;
+            this.label108.Location = new System.Drawing.Point(51, 30);
+            this.label108.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label108.Name = "label108";
+            this.label108.Size = new System.Drawing.Size(616, 17);
+            this.label108.TabIndex = 17;
+            this.label108.Text = "Коэффициент учитывающий влияние динамических нагрузок на усталость зубчатых колес" +
+    ":";
+            // 
+            // label82
+            // 
+            this.label82.AutoSize = true;
+            this.label82.Location = new System.Drawing.Point(51, 62);
+            this.label82.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label82.Name = "label82";
+            this.label82.Size = new System.Drawing.Size(555, 17);
+            this.label82.TabIndex = 17;
+            this.label82.Text = "Номинальное значение коэффициента напряжения изгиба зуба ведущего колеса:";
             // 
             // tabPage4
             // 
@@ -1167,646 +1688,15 @@
             this.tabPage4.Text = "Проверка на прочность";
             this.tabPage4.UseVisualStyleBackColor = true;
             // 
-            // label82
-            // 
-            this.label82.AutoSize = true;
-            this.label82.Location = new System.Drawing.Point(51, 62);
-            this.label82.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label82.Name = "label82";
-            this.label82.Size = new System.Drawing.Size(555, 17);
-            this.label82.TabIndex = 17;
-            this.label82.Text = "Номинальное значение коэффициента напряжения изгиба зуба ведущего колеса:";
-            // 
-            // label83
-            // 
-            this.label83.AutoSize = true;
-            this.label83.Location = new System.Drawing.Point(51, 94);
-            this.label83.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label83.Name = "label83";
-            this.label83.Size = new System.Drawing.Size(554, 17);
-            this.label83.TabIndex = 17;
-            this.label83.Text = "Номинальное значение коэффициента напряжения изгиба зуба ведомого колеса:";
-            // 
-            // label84
-            // 
-            this.label84.AutoSize = true;
-            this.label84.Location = new System.Drawing.Point(51, 159);
-            this.label84.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label84.Name = "label84";
-            this.label84.Size = new System.Drawing.Size(599, 17);
-            this.label84.TabIndex = 17;
-            this.label84.Text = "Коэффициент учитывающий параметры парного зубчатого колеса для ведомого колеса:";
-            // 
-            // label85
-            // 
-            this.label85.AutoSize = true;
-            this.label85.Location = new System.Drawing.Point(51, 191);
-            this.label85.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label85.Name = "label85";
-            this.label85.Size = new System.Drawing.Size(320, 17);
-            this.label85.TabIndex = 17;
-            this.label85.Text = "Эквивалентное число зубьев ведущего колеса:";
-            // 
-            // label86
-            // 
-            this.label86.AutoSize = true;
-            this.label86.Location = new System.Drawing.Point(51, 223);
-            this.label86.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label86.Name = "label86";
-            this.label86.Size = new System.Drawing.Size(319, 17);
-            this.label86.TabIndex = 17;
-            this.label86.Text = "Эквивалентное число зубьев ведомого колеса:";
-            // 
-            // label87
-            // 
-            this.label87.AutoSize = true;
-            this.label87.Location = new System.Drawing.Point(51, 255);
-            this.label87.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label87.Name = "label87";
-            this.label87.Size = new System.Drawing.Size(334, 17);
-            this.label87.TabIndex = 17;
-            this.label87.Text = "Единичное напряжение изгиба ведущего колеса:";
-            // 
-            // label88
-            // 
-            this.label88.AutoSize = true;
-            this.label88.Location = new System.Drawing.Point(51, 287);
-            this.label88.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label88.Name = "label88";
-            this.label88.Size = new System.Drawing.Size(333, 17);
-            this.label88.TabIndex = 17;
-            this.label88.Text = "Единичное напряжение изгиба ведомого колеса:";
-            // 
-            // label89
-            // 
-            this.label89.AutoSize = true;
-            this.label89.Location = new System.Drawing.Point(51, 319);
-            this.label89.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label89.Name = "label89";
-            this.label89.Size = new System.Drawing.Size(333, 17);
-            this.label89.TabIndex = 17;
-            this.label89.Text = "Коэффициент учитывающий перекрытие зубьев:";
-            // 
-            // label90
-            // 
-            this.label90.AutoSize = true;
-            this.label90.Location = new System.Drawing.Point(51, 351);
-            this.label90.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label90.Name = "label90";
-            this.label90.Size = new System.Drawing.Size(436, 17);
-            this.label90.TabIndex = 17;
-            this.label90.Text = "Коэффициент учитывающий вид зуба и точно его изготовления:";
-            // 
-            // label91
-            // 
-            this.label91.AutoSize = true;
-            this.label91.Location = new System.Drawing.Point(51, 383);
-            this.label91.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label91.Name = "label91";
-            this.label91.Size = new System.Drawing.Size(616, 17);
-            this.label91.TabIndex = 17;
-            this.label91.Text = "Коэффициент учитывающий неравномерность распределения нагрузки по ширине венцов:";
-            // 
-            // label92
-            // 
-            this.label92.AutoSize = true;
-            this.label92.Location = new System.Drawing.Point(51, 415);
-            this.label92.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label92.Name = "label92";
-            this.label92.Size = new System.Drawing.Size(562, 17);
-            this.label92.TabIndex = 17;
-            this.label92.Text = "Коэффициент учитывающий влияние приработки зубьев в процессе эксплуатации:";
-            // 
-            // label93
-            // 
-            this.label93.AutoSize = true;
-            this.label93.Location = new System.Drawing.Point(51, 447);
-            this.label93.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label93.Name = "label93";
-            this.label93.Size = new System.Drawing.Size(482, 17);
-            this.label93.TabIndex = 17;
-            this.label93.Text = "Коэффициент учитывающий влияние сил трения для ведущего колеса:";
-            // 
-            // label94
-            // 
-            this.label94.AutoSize = true;
-            this.label94.Location = new System.Drawing.Point(51, 127);
-            this.label94.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label94.Name = "label94";
-            this.label94.Size = new System.Drawing.Size(600, 17);
-            this.label94.TabIndex = 17;
-            this.label94.Text = "Коэффициент учитывающий параметры парного зубчатого колеса для ведущего колеса:";
-            // 
-            // label95
-            // 
-            this.label95.AutoSize = true;
-            this.label95.Location = new System.Drawing.Point(51, 478);
-            this.label95.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label95.Name = "label95";
-            this.label95.Size = new System.Drawing.Size(481, 17);
-            this.label95.TabIndex = 17;
-            this.label95.Text = "Коэффициент учитывающий влияние сил трения для ведомого колеса:";
-            // 
-            // label96
-            // 
-            this.label96.AutoSize = true;
-            this.label96.Location = new System.Drawing.Point(51, 511);
-            this.label96.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label96.Name = "label96";
-            this.label96.Size = new System.Drawing.Size(434, 17);
-            this.label96.TabIndex = 17;
-            this.label96.Text = "Коэффициент учитывающий влияние размеров зубчатых колес:";
-            // 
-            // label97
-            // 
-            this.label97.AutoSize = true;
-            this.label97.Location = new System.Drawing.Point(51, 543);
-            this.label97.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label97.Name = "label97";
-            this.label97.Size = new System.Drawing.Size(608, 17);
-            this.label97.TabIndex = 17;
-            this.label97.Text = "Коэффициент учитывающий особенности технологии обработки переходной кривой зуба:";
-            // 
-            // label98
-            // 
-            this.label98.AutoSize = true;
-            this.label98.Location = new System.Drawing.Point(51, 575);
-            this.label98.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label98.Name = "label98";
-            this.label98.Size = new System.Drawing.Size(332, 17);
-            this.label98.TabIndex = 17;
-            this.label98.Text = "Расчетное напряжение изгиба ведущего колеса:";
-            // 
-            // label99
-            // 
-            this.label99.AutoSize = true;
-            this.label99.Location = new System.Drawing.Point(51, 607);
-            this.label99.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label99.Name = "label99";
-            this.label99.Size = new System.Drawing.Size(331, 17);
-            this.label99.TabIndex = 17;
-            this.label99.Text = "Расчетное напряжение изгиба ведомого колеса:";
-            // 
-            // label100
-            // 
-            this.label100.AutoSize = true;
-            this.label100.Location = new System.Drawing.Point(51, 639);
-            this.label100.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label100.Name = "label100";
-            this.label100.Size = new System.Drawing.Size(346, 17);
-            this.label100.TabIndex = 17;
-            this.label100.Text = "Коэффициент учитывающий характер нагружения:";
-            // 
-            // label101
-            // 
-            this.label101.AutoSize = true;
-            this.label101.Location = new System.Drawing.Point(51, 671);
-            this.label101.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label101.Name = "label101";
-            this.label101.Size = new System.Drawing.Size(226, 17);
-            this.label101.TabIndex = 17;
-            this.label101.Text = "Предельное напряжение изгиба:";
-            // 
-            // label102
-            // 
-            this.label102.AutoSize = true;
-            this.label102.Location = new System.Drawing.Point(51, 703);
-            this.label102.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label102.Name = "label102";
-            this.label102.Size = new System.Drawing.Size(411, 17);
-            this.label102.TabIndex = 17;
-            this.label102.Text = "Ресурс ведущего зубчатого колеса по усталости при изгибе:";
-            // 
-            // label103
-            // 
-            this.label103.AutoSize = true;
-            this.label103.Location = new System.Drawing.Point(51, 735);
-            this.label103.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label103.Name = "label103";
-            this.label103.Size = new System.Drawing.Size(410, 17);
-            this.label103.TabIndex = 17;
-            this.label103.Text = "Ресурс ведомого зубчатого колеса по усталости при изгибе:";
-            // 
-            // label104
-            // 
-            this.label104.AutoSize = true;
-            this.label104.Location = new System.Drawing.Point(51, 767);
-            this.label104.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label104.Name = "label104";
-            this.label104.Size = new System.Drawing.Size(301, 17);
-            this.label104.TabIndex = 17;
-            this.label104.Text = "Циклостойкость по изгибным напряжениям:";
-            // 
-            // label105
-            // 
-            this.label105.AutoSize = true;
-            this.label105.Location = new System.Drawing.Point(51, 799);
-            this.label105.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label105.Name = "label105";
-            this.label105.Size = new System.Drawing.Size(489, 17);
-            this.label105.TabIndex = 17;
-            this.label105.Text = "Пробег автомобиля (км) до усталостной поломки зуба ведущего колеса:";
-            // 
-            // label106
-            // 
-            this.label106.AutoSize = true;
-            this.label106.Location = new System.Drawing.Point(51, 832);
-            this.label106.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label106.Name = "label106";
-            this.label106.Size = new System.Drawing.Size(480, 17);
-            this.label106.TabIndex = 17;
-            this.label106.Text = "Пробег автомобиля (км) до усталостной поломки зуба ведмого колеса:";
-            // 
-            // label108
-            // 
-            this.label108.AutoSize = true;
-            this.label108.Location = new System.Drawing.Point(51, 30);
-            this.label108.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label108.Name = "label108";
-            this.label108.Size = new System.Drawing.Size(616, 17);
-            this.label108.TabIndex = 17;
-            this.label108.Text = "Коэффициент учитывающий влияние динамических нагрузок на усталость зубчатых колес" +
-    ":";
-            // 
-            // label109
-            // 
-            this.label109.AutoSize = true;
-            this.label109.Location = new System.Drawing.Point(851, 30);
-            this.label109.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label109.Name = "label109";
-            this.label109.Size = new System.Drawing.Size(20, 17);
-            this.label109.TabIndex = 18;
-            this.label109.Text = "...";
-            // 
-            // label107
-            // 
-            this.label107.AutoSize = true;
-            this.label107.Location = new System.Drawing.Point(851, 62);
-            this.label107.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label107.Name = "label107";
-            this.label107.Size = new System.Drawing.Size(20, 17);
-            this.label107.TabIndex = 18;
-            this.label107.Text = "...";
-            // 
-            // label110
-            // 
-            this.label110.AutoSize = true;
-            this.label110.Location = new System.Drawing.Point(851, 94);
-            this.label110.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label110.Name = "label110";
-            this.label110.Size = new System.Drawing.Size(20, 17);
-            this.label110.TabIndex = 18;
-            this.label110.Text = "...";
-            // 
-            // label111
-            // 
-            this.label111.AutoSize = true;
-            this.label111.Location = new System.Drawing.Point(851, 127);
-            this.label111.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label111.Name = "label111";
-            this.label111.Size = new System.Drawing.Size(20, 17);
-            this.label111.TabIndex = 18;
-            this.label111.Text = "...";
-            // 
-            // label112
-            // 
-            this.label112.AutoSize = true;
-            this.label112.Location = new System.Drawing.Point(851, 159);
-            this.label112.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label112.Name = "label112";
-            this.label112.Size = new System.Drawing.Size(20, 17);
-            this.label112.TabIndex = 18;
-            this.label112.Text = "...";
-            // 
-            // label113
-            // 
-            this.label113.AutoSize = true;
-            this.label113.Location = new System.Drawing.Point(851, 191);
-            this.label113.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label113.Name = "label113";
-            this.label113.Size = new System.Drawing.Size(20, 17);
-            this.label113.TabIndex = 18;
-            this.label113.Text = "...";
-            // 
-            // label114
-            // 
-            this.label114.AutoSize = true;
-            this.label114.Location = new System.Drawing.Point(851, 223);
-            this.label114.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label114.Name = "label114";
-            this.label114.Size = new System.Drawing.Size(20, 17);
-            this.label114.TabIndex = 18;
-            this.label114.Text = "...";
-            // 
-            // label115
-            // 
-            this.label115.AutoSize = true;
-            this.label115.Location = new System.Drawing.Point(851, 255);
-            this.label115.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label115.Name = "label115";
-            this.label115.Size = new System.Drawing.Size(20, 17);
-            this.label115.TabIndex = 18;
-            this.label115.Text = "...";
-            // 
-            // label116
-            // 
-            this.label116.AutoSize = true;
-            this.label116.Location = new System.Drawing.Point(851, 287);
-            this.label116.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label116.Name = "label116";
-            this.label116.Size = new System.Drawing.Size(20, 17);
-            this.label116.TabIndex = 18;
-            this.label116.Text = "...";
-            // 
-            // label117
-            // 
-            this.label117.AutoSize = true;
-            this.label117.Location = new System.Drawing.Point(851, 319);
-            this.label117.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label117.Name = "label117";
-            this.label117.Size = new System.Drawing.Size(20, 17);
-            this.label117.TabIndex = 18;
-            this.label117.Text = "...";
-            // 
-            // label118
-            // 
-            this.label118.AutoSize = true;
-            this.label118.Location = new System.Drawing.Point(851, 351);
-            this.label118.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label118.Name = "label118";
-            this.label118.Size = new System.Drawing.Size(20, 17);
-            this.label118.TabIndex = 18;
-            this.label118.Text = "...";
-            // 
-            // label119
-            // 
-            this.label119.AutoSize = true;
-            this.label119.Location = new System.Drawing.Point(851, 383);
-            this.label119.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label119.Name = "label119";
-            this.label119.Size = new System.Drawing.Size(20, 17);
-            this.label119.TabIndex = 18;
-            this.label119.Text = "...";
-            // 
-            // label120
-            // 
-            this.label120.AutoSize = true;
-            this.label120.Location = new System.Drawing.Point(851, 415);
-            this.label120.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label120.Name = "label120";
-            this.label120.Size = new System.Drawing.Size(20, 17);
-            this.label120.TabIndex = 18;
-            this.label120.Text = "...";
-            // 
-            // label121
-            // 
-            this.label121.AutoSize = true;
-            this.label121.Location = new System.Drawing.Point(851, 447);
-            this.label121.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label121.Name = "label121";
-            this.label121.Size = new System.Drawing.Size(20, 17);
-            this.label121.TabIndex = 18;
-            this.label121.Text = "...";
-            // 
-            // label122
-            // 
-            this.label122.AutoSize = true;
-            this.label122.Location = new System.Drawing.Point(851, 478);
-            this.label122.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label122.Name = "label122";
-            this.label122.Size = new System.Drawing.Size(20, 17);
-            this.label122.TabIndex = 18;
-            this.label122.Text = "...";
-            // 
-            // label123
-            // 
-            this.label123.AutoSize = true;
-            this.label123.Location = new System.Drawing.Point(851, 511);
-            this.label123.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label123.Name = "label123";
-            this.label123.Size = new System.Drawing.Size(20, 17);
-            this.label123.TabIndex = 18;
-            this.label123.Text = "...";
-            // 
-            // label124
-            // 
-            this.label124.AutoSize = true;
-            this.label124.Location = new System.Drawing.Point(851, 543);
-            this.label124.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label124.Name = "label124";
-            this.label124.Size = new System.Drawing.Size(20, 17);
-            this.label124.TabIndex = 18;
-            this.label124.Text = "...";
-            // 
-            // label125
-            // 
-            this.label125.AutoSize = true;
-            this.label125.Location = new System.Drawing.Point(851, 575);
-            this.label125.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label125.Name = "label125";
-            this.label125.Size = new System.Drawing.Size(20, 17);
-            this.label125.TabIndex = 18;
-            this.label125.Text = "...";
-            // 
-            // label126
-            // 
-            this.label126.AutoSize = true;
-            this.label126.Location = new System.Drawing.Point(851, 607);
-            this.label126.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label126.Name = "label126";
-            this.label126.Size = new System.Drawing.Size(20, 17);
-            this.label126.TabIndex = 18;
-            this.label126.Text = "...";
-            // 
-            // label127
-            // 
-            this.label127.AutoSize = true;
-            this.label127.Location = new System.Drawing.Point(851, 639);
-            this.label127.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label127.Name = "label127";
-            this.label127.Size = new System.Drawing.Size(20, 17);
-            this.label127.TabIndex = 18;
-            this.label127.Text = "...";
-            // 
-            // label128
-            // 
-            this.label128.AutoSize = true;
-            this.label128.Location = new System.Drawing.Point(851, 671);
-            this.label128.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label128.Name = "label128";
-            this.label128.Size = new System.Drawing.Size(20, 17);
-            this.label128.TabIndex = 18;
-            this.label128.Text = "...";
-            // 
-            // label129
-            // 
-            this.label129.AutoSize = true;
-            this.label129.Location = new System.Drawing.Point(851, 703);
-            this.label129.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label129.Name = "label129";
-            this.label129.Size = new System.Drawing.Size(20, 17);
-            this.label129.TabIndex = 18;
-            this.label129.Text = "...";
-            // 
-            // label130
-            // 
-            this.label130.AutoSize = true;
-            this.label130.Location = new System.Drawing.Point(851, 735);
-            this.label130.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label130.Name = "label130";
-            this.label130.Size = new System.Drawing.Size(20, 17);
-            this.label130.TabIndex = 18;
-            this.label130.Text = "...";
-            // 
-            // label131
-            // 
-            this.label131.AutoSize = true;
-            this.label131.Location = new System.Drawing.Point(851, 767);
-            this.label131.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label131.Name = "label131";
-            this.label131.Size = new System.Drawing.Size(20, 17);
-            this.label131.TabIndex = 18;
-            this.label131.Text = "...";
-            // 
-            // label132
-            // 
-            this.label132.AutoSize = true;
-            this.label132.Location = new System.Drawing.Point(851, 799);
-            this.label132.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label132.Name = "label132";
-            this.label132.Size = new System.Drawing.Size(20, 17);
-            this.label132.TabIndex = 18;
-            this.label132.Text = "...";
-            // 
-            // label133
-            // 
-            this.label133.AutoSize = true;
-            this.label133.Location = new System.Drawing.Point(851, 832);
-            this.label133.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label133.Name = "label133";
-            this.label133.Size = new System.Drawing.Size(20, 17);
-            this.label133.TabIndex = 18;
-            this.label133.Text = "...";
-            // 
-            // label43
-            // 
-            this.label43.AutoSize = true;
-            this.label43.Location = new System.Drawing.Point(84, 43);
-            this.label43.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label43.Name = "label43";
-            this.label43.Size = new System.Drawing.Size(263, 17);
-            this.label43.TabIndex = 45;
-            this.label43.Text = "Максимальный динамический момент:";
-            // 
-            // label57
-            // 
-            this.label57.AutoSize = true;
-            this.label57.Location = new System.Drawing.Point(84, 75);
-            this.label57.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label57.Name = "label57";
-            this.label57.Size = new System.Drawing.Size(365, 17);
-            this.label57.TabIndex = 45;
-            this.label57.Text = "Коэффициент максимальной динамической нагрузки:";
-            // 
-            // label81
-            // 
-            this.label81.AutoSize = true;
-            this.label81.Location = new System.Drawing.Point(84, 107);
-            this.label81.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label81.Name = "label81";
-            this.label81.Size = new System.Drawing.Size(204, 17);
-            this.label81.TabIndex = 45;
-            this.label81.Text = "Коэффициент динамичности:";
-            // 
-            // label134
-            // 
-            this.label134.AutoSize = true;
-            this.label134.Location = new System.Drawing.Point(84, 139);
-            this.label134.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label134.Name = "label134";
-            this.label134.Size = new System.Drawing.Size(448, 17);
-            this.label134.TabIndex = 45;
-            this.label134.Text = "Максимальное расчетное изгибное напряжение ведущего колеса:";
-            // 
-            // label135
-            // 
-            this.label135.AutoSize = true;
-            this.label135.Location = new System.Drawing.Point(84, 171);
-            this.label135.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label135.Name = "label135";
-            this.label135.Size = new System.Drawing.Size(447, 17);
-            this.label135.TabIndex = 45;
-            this.label135.Text = "Максимальное расчетное изгибное напряжение ведомого колеса:";
-            // 
-            // label136
-            // 
-            this.label136.AutoSize = true;
-            this.label136.Location = new System.Drawing.Point(84, 203);
-            this.label136.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label136.Name = "label136";
-            this.label136.Size = new System.Drawing.Size(464, 17);
-            this.label136.TabIndex = 45;
-            this.label136.Text = "Максимальное расчетное контактное напряжение ведущего колеса:";
-            // 
-            // label137
-            // 
-            this.label137.AutoSize = true;
-            this.label137.Location = new System.Drawing.Point(84, 235);
-            this.label137.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label137.Name = "label137";
-            this.label137.Size = new System.Drawing.Size(463, 17);
-            this.label137.TabIndex = 45;
-            this.label137.Text = "Максимальное расчетное контактное напряжение ведомого колеса:";
-            // 
-            // label139
-            // 
-            this.label139.AutoSize = true;
-            this.label139.Location = new System.Drawing.Point(804, 43);
-            this.label139.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label139.Name = "label139";
-            this.label139.Size = new System.Drawing.Size(20, 17);
-            this.label139.TabIndex = 45;
-            this.label139.Text = "...";
-            // 
-            // label140
-            // 
-            this.label140.AutoSize = true;
-            this.label140.Location = new System.Drawing.Point(804, 75);
-            this.label140.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label140.Name = "label140";
-            this.label140.Size = new System.Drawing.Size(20, 17);
-            this.label140.TabIndex = 45;
-            this.label140.Text = "...";
-            // 
-            // label141
-            // 
-            this.label141.AutoSize = true;
-            this.label141.Location = new System.Drawing.Point(804, 107);
-            this.label141.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label141.Name = "label141";
-            this.label141.Size = new System.Drawing.Size(20, 17);
-            this.label141.TabIndex = 45;
-            this.label141.Text = "...";
-            // 
-            // label142
-            // 
-            this.label142.AutoSize = true;
-            this.label142.Location = new System.Drawing.Point(804, 139);
-            this.label142.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label142.Name = "label142";
-            this.label142.Size = new System.Drawing.Size(20, 17);
-            this.label142.TabIndex = 45;
-            this.label142.Text = "...";
-            // 
-            // label143
-            // 
-            this.label143.AutoSize = true;
-            this.label143.Location = new System.Drawing.Point(804, 171);
-            this.label143.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label143.Name = "label143";
-            this.label143.Size = new System.Drawing.Size(20, 17);
-            this.label143.TabIndex = 45;
-            this.label143.Text = "...";
+            // label145
+            // 
+            this.label145.AutoSize = true;
+            this.label145.Location = new System.Drawing.Point(804, 235);
+            this.label145.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label145.Name = "label145";
+            this.label145.Size = new System.Drawing.Size(20, 17);
+            this.label145.TabIndex = 45;
+            this.label145.Text = "...";
             // 
             // label144
             // 
@@ -1818,15 +1708,125 @@
             this.label144.TabIndex = 45;
             this.label144.Text = "...";
             // 
-            // label145
+            // label143
             // 
-            this.label145.AutoSize = true;
-            this.label145.Location = new System.Drawing.Point(804, 235);
-            this.label145.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label145.Name = "label145";
-            this.label145.Size = new System.Drawing.Size(20, 17);
-            this.label145.TabIndex = 45;
-            this.label145.Text = "...";
+            this.label143.AutoSize = true;
+            this.label143.Location = new System.Drawing.Point(804, 171);
+            this.label143.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label143.Name = "label143";
+            this.label143.Size = new System.Drawing.Size(20, 17);
+            this.label143.TabIndex = 45;
+            this.label143.Text = "...";
+            // 
+            // label142
+            // 
+            this.label142.AutoSize = true;
+            this.label142.Location = new System.Drawing.Point(804, 139);
+            this.label142.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label142.Name = "label142";
+            this.label142.Size = new System.Drawing.Size(20, 17);
+            this.label142.TabIndex = 45;
+            this.label142.Text = "...";
+            // 
+            // label141
+            // 
+            this.label141.AutoSize = true;
+            this.label141.Location = new System.Drawing.Point(804, 107);
+            this.label141.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label141.Name = "label141";
+            this.label141.Size = new System.Drawing.Size(20, 17);
+            this.label141.TabIndex = 45;
+            this.label141.Text = "...";
+            // 
+            // label140
+            // 
+            this.label140.AutoSize = true;
+            this.label140.Location = new System.Drawing.Point(804, 75);
+            this.label140.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label140.Name = "label140";
+            this.label140.Size = new System.Drawing.Size(20, 17);
+            this.label140.TabIndex = 45;
+            this.label140.Text = "...";
+            // 
+            // label139
+            // 
+            this.label139.AutoSize = true;
+            this.label139.Location = new System.Drawing.Point(804, 43);
+            this.label139.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label139.Name = "label139";
+            this.label139.Size = new System.Drawing.Size(20, 17);
+            this.label139.TabIndex = 45;
+            this.label139.Text = "...";
+            // 
+            // label137
+            // 
+            this.label137.AutoSize = true;
+            this.label137.Location = new System.Drawing.Point(84, 235);
+            this.label137.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label137.Name = "label137";
+            this.label137.Size = new System.Drawing.Size(463, 17);
+            this.label137.TabIndex = 45;
+            this.label137.Text = "Максимальное расчетное контактное напряжение ведомого колеса:";
+            // 
+            // label136
+            // 
+            this.label136.AutoSize = true;
+            this.label136.Location = new System.Drawing.Point(84, 203);
+            this.label136.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label136.Name = "label136";
+            this.label136.Size = new System.Drawing.Size(464, 17);
+            this.label136.TabIndex = 45;
+            this.label136.Text = "Максимальное расчетное контактное напряжение ведущего колеса:";
+            // 
+            // label135
+            // 
+            this.label135.AutoSize = true;
+            this.label135.Location = new System.Drawing.Point(84, 171);
+            this.label135.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label135.Name = "label135";
+            this.label135.Size = new System.Drawing.Size(447, 17);
+            this.label135.TabIndex = 45;
+            this.label135.Text = "Максимальное расчетное изгибное напряжение ведомого колеса:";
+            // 
+            // label134
+            // 
+            this.label134.AutoSize = true;
+            this.label134.Location = new System.Drawing.Point(84, 139);
+            this.label134.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label134.Name = "label134";
+            this.label134.Size = new System.Drawing.Size(448, 17);
+            this.label134.TabIndex = 45;
+            this.label134.Text = "Максимальное расчетное изгибное напряжение ведущего колеса:";
+            // 
+            // label81
+            // 
+            this.label81.AutoSize = true;
+            this.label81.Location = new System.Drawing.Point(84, 107);
+            this.label81.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label81.Name = "label81";
+            this.label81.Size = new System.Drawing.Size(204, 17);
+            this.label81.TabIndex = 45;
+            this.label81.Text = "Коэффициент динамичности:";
+            // 
+            // label57
+            // 
+            this.label57.AutoSize = true;
+            this.label57.Location = new System.Drawing.Point(84, 75);
+            this.label57.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label57.Name = "label57";
+            this.label57.Size = new System.Drawing.Size(365, 17);
+            this.label57.TabIndex = 45;
+            this.label57.Text = "Коэффициент максимальной динамической нагрузки:";
+            // 
+            // label43
+            // 
+            this.label43.AutoSize = true;
+            this.label43.Location = new System.Drawing.Point(84, 43);
+            this.label43.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label43.Name = "label43";
+            this.label43.Size = new System.Drawing.Size(263, 17);
+            this.label43.TabIndex = 45;
+            this.label43.Text = "Максимальный динамический момент:";
             // 
             // SingleCheckForm
             // 
@@ -1835,7 +1835,7 @@
             this.ClientSize = new System.Drawing.Size(1068, 918);
             this.Controls.Add(this.tabControl1);
             this.Name = "SingleCheckForm";
-            this.Text = "SingleCheckForm";
+            this.Text = "Проверка расчета";
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();

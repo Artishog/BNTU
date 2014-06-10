@@ -44,10 +44,10 @@ namespace BNTU_project
             double K0_beta, double Kj_delta, double Kve, int sigmaFlimb_c_star, double Ft, double mn, double Ukp1,
             double ksi, double KPF, double U_d1, double U_d2, int NFO, double v, double r0, double U0, int kinematicScheme)
         {
-            calc_YF0_shest();
-            calc_YF0_kol();
             calc_zv_shest(z_shest1, beta_d);
             calc_zv_kol(z_kol1, beta_d);
+            calc_YF0_shest();
+            calc_YF0_kol();
             calc_ku_shest(z_shest1);
             calc_ku_kol(z_kol1);
             calc_YF_shest();
@@ -82,12 +82,102 @@ namespace BNTU_project
         //Заглушка, считается по графику
         private void calc_YF0_shest()
         {
-            _YF0_shest = 2.17;
+            //_YF0_shest = 2.17;
+
+            _YF0_shest = getYF0_shest();
+        }
+
+        private double getYF0_shest()
+        {
+            double result = 0;
+            double X = _zv_shest;
+
+            if ((X >= 12) && (X < 16))
+            {
+                result = GraphHelper.GetYbyX_decreasing(X, 12, 16, 2.42, 2.6);
+            } 
+
+            if ((X >= 16) && (X < 20))
+            {
+                result = GraphHelper.GetYbyX_decreasing(X, 16, 20, 2.32, 2.42);
+            }
+
+            if ((X >= 20) && (X < 25))
+            {
+                result = GraphHelper.GetYbyX_decreasing(X, 20, 25, 2.25, 2.32);
+            }
+
+            if ((X >= 25) && (X < 30))
+            {
+                result = GraphHelper.GetYbyX_decreasing(X, 25, 30, 2.2, 2.25);
+            }
+
+            if ((X >= 30) && (X < 40))
+            {
+                result = GraphHelper.GetYbyX_decreasing(X, 30, 40, 2.15, 2.2);
+            }
+
+            if ((X >= 40) && (X < 50))
+            {
+                result = GraphHelper.GetYbyX_decreasing(X, 40, 50, 2.135, 2.15);
+            }
+
+            if ((X >= 50) && (X < 150))
+            {
+                result = 2.135;
+            }
+
+            return result;
         }
 
         private void calc_YF0_kol()
         {
-            _YF0_kol = 2.73;
+            //_YF0_kol = 2.73;
+
+            _YF0_kol = getYF0_kol();
+        }
+
+        private double getYF0_kol()
+        {
+            double result = 0;
+            double X = _zv_kol;
+
+            if ((X >= 18) && (X < 25))
+            {
+                result = GraphHelper.GetYbyX_decreasing(X, 18, 25, 3.1, 3.6);
+            }
+
+            if ((X >= 25) && (X < 30))
+            {
+                result = GraphHelper.GetYbyX_decreasing(X, 25, 30, 2.9, 3.1);
+            }
+
+            if ((X >= 30) && (X < 40))
+            {
+                result = GraphHelper.GetYbyX_decreasing(X, 30, 40, 2.7, 2.9);
+            }
+
+            if ((X >= 40) && (X < 60))
+            {
+                result = GraphHelper.GetYbyX_decreasing(X, 40, 60, 2.58, 2.7);
+            }
+
+            if ((X >= 60) && (X < 80))
+            {
+                result = GraphHelper.GetYbyX_decreasing(X, 60, 80, 2.5, 2.58);
+            }
+
+            if ((X >= 80) && (X < 100))
+            {
+                result = GraphHelper.GetYbyX_decreasing(X, 80, 100, 2.45, 2.5);
+            }
+
+            if ((X >= 100) && (X < 150))
+            {
+                result = GraphHelper.GetYbyX_decreasing(X, 100, 150, 2.39, 2.45);
+            }
+
+            return result;
         }
 
         private void calc_zv_shest(double z_shest1, double beta_d)

@@ -33,6 +33,8 @@ namespace BNTU_project
             label1.Text = ((double)trackBar1.Value / 10).ToString();
 
             textBox1.Text = mainForm.transferGearbox.delta.ToString();
+            textBox2.Text = mainForm.transferGearbox.Supr.ToString();
+            textBox3.Text = mainForm.transferGearbox.mupr.ToString();
         }
 
         private void trackBar1_Scroll(object sender, EventArgs e)
@@ -45,6 +47,8 @@ namespace BNTU_project
             try
             {
                 mainForm.transferGearbox.delta = double.Parse(textBox1.Text);
+                mainForm.transferGearbox.Supr = double.Parse(textBox2.Text);
+                mainForm.transferGearbox.mupr = double.Parse(textBox3.Text);
                 mainForm.transferGearbox.Ka = (double)trackBar1.Value / 10;
             }
             catch (FormatException ex)

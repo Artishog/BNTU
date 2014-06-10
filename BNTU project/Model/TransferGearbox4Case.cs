@@ -109,7 +109,7 @@ namespace BNTU_project
 
         public void calc_L1(double bf_shest, double bw1)
         {
-            _L1 = bf_shest + bw1 + _Supr + 10;
+            _L1 = bf_shest + 5 + bw1 / 2 + _Supr + bf_shest / 2 + 5;
         }
 
         public void calc_L2() //требует доработки
@@ -179,7 +179,7 @@ namespace BNTU_project
 
         public void calc_mrk()
         {
-            _mrk = _m_korp + _msh1 + _msh2 + _msh3 + _msh4 + _msh5 + _mv1 + _mv2 + _mv3;
+            _mrk = _m_korp + _msh1 + _msh2 + _msh3 + _msh4 + _msh5 + _mv1 + _mv2 + _mv3 + _mupr;
         }
     }
 }

@@ -62,6 +62,10 @@
             this.textBox16 = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.textBox15 = new System.Windows.Forms.TextBox();
+            this.textBox17 = new System.Windows.Forms.TextBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -375,6 +379,42 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
+            // textBox15
+            // 
+            this.textBox15.Location = new System.Drawing.Point(632, 413);
+            this.textBox15.Margin = new System.Windows.Forms.Padding(4);
+            this.textBox15.Name = "textBox15";
+            this.textBox15.Size = new System.Drawing.Size(141, 22);
+            this.textBox15.TabIndex = 2;
+            // 
+            // textBox17
+            // 
+            this.textBox17.Location = new System.Drawing.Point(632, 463);
+            this.textBox17.Margin = new System.Windows.Forms.Padding(4);
+            this.textBox17.Name = "textBox17";
+            this.textBox17.Size = new System.Drawing.Size(141, 22);
+            this.textBox17.TabIndex = 2;
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(782, 418);
+            this.label15.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(244, 17);
+            this.label15.TabIndex = 0;
+            this.label15.Text = "Коэффициент сцепления с дорогой";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(782, 463);
+            this.label18.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(255, 17);
+            this.label18.TabIndex = 0;
+            this.label18.Text = "Коэффициент сопротивления дороги";
+            // 
             // CarSettingsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -382,6 +422,8 @@
             this.ClientSize = new System.Drawing.Size(1232, 574);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
+            this.Controls.Add(this.textBox17);
+            this.Controls.Add(this.textBox15);
             this.Controls.Add(this.textBox16);
             this.Controls.Add(this.textBox8);
             this.Controls.Add(this.textBox14);
@@ -394,6 +436,8 @@
             this.Controls.Add(this.textBox3);
             this.Controls.Add(this.textBox10);
             this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.label18);
+            this.Controls.Add(this.label15);
             this.Controls.Add(this.label17);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.textBox9);
@@ -458,5 +502,9 @@
         private System.Windows.Forms.TextBox textBox16;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.TextBox textBox15;
+        private System.Windows.Forms.TextBox textBox17;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label18;
     }
 }

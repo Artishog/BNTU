@@ -223,6 +223,10 @@
             this.label182 = new System.Windows.Forms.Label();
             this.label181 = new System.Windows.Forms.Label();
             this.label180 = new System.Windows.Forms.Label();
+            this.label49 = new System.Windows.Forms.Label();
+            this.label59 = new System.Windows.Forms.Label();
+            this.label87 = new System.Windows.Forms.Label();
+            this.label88 = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -2054,12 +2058,16 @@
             this.tabPage6.Controls.Add(this.label197);
             this.tabPage6.Controls.Add(this.label196);
             this.tabPage6.Controls.Add(this.label215);
+            this.tabPage6.Controls.Add(this.label88);
+            this.tabPage6.Controls.Add(this.label87);
             this.tabPage6.Controls.Add(this.label205);
             this.tabPage6.Controls.Add(this.label195);
             this.tabPage6.Controls.Add(this.label194);
+            this.tabPage6.Controls.Add(this.label59);
             this.tabPage6.Controls.Add(this.label213);
             this.tabPage6.Controls.Add(this.label203);
             this.tabPage6.Controls.Add(this.label193);
+            this.tabPage6.Controls.Add(this.label49);
             this.tabPage6.Controls.Add(this.label212);
             this.tabPage6.Controls.Add(this.label202);
             this.tabPage6.Controls.Add(this.label192);
@@ -2131,7 +2139,7 @@
             // label215
             // 
             this.label215.AutoSize = true;
-            this.label215.Location = new System.Drawing.Point(633, 497);
+            this.label215.Location = new System.Drawing.Point(633, 561);
             this.label215.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label215.Name = "label215";
             this.label215.Size = new System.Drawing.Size(20, 17);
@@ -2141,7 +2149,7 @@
             // label205
             // 
             this.label205.AutoSize = true;
-            this.label205.Location = new System.Drawing.Point(88, 497);
+            this.label205.Location = new System.Drawing.Point(88, 561);
             this.label205.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label205.Name = "label205";
             this.label205.Size = new System.Drawing.Size(201, 17);
@@ -2388,6 +2396,46 @@
             this.label180.TabIndex = 1;
             this.label180.Text = "Межосевое расстояние входного и промежуточного валов:";
             // 
+            // label49
+            // 
+            this.label49.AutoSize = true;
+            this.label49.Location = new System.Drawing.Point(633, 497);
+            this.label49.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label49.Name = "label49";
+            this.label49.Size = new System.Drawing.Size(20, 17);
+            this.label49.TabIndex = 1;
+            this.label49.Text = "...";
+            // 
+            // label59
+            // 
+            this.label59.AutoSize = true;
+            this.label59.Location = new System.Drawing.Point(633, 529);
+            this.label59.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label59.Name = "label59";
+            this.label59.Size = new System.Drawing.Size(20, 17);
+            this.label59.TabIndex = 1;
+            this.label59.Text = "...";
+            // 
+            // label87
+            // 
+            this.label87.AutoSize = true;
+            this.label87.Location = new System.Drawing.Point(88, 497);
+            this.label87.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label87.Name = "label87";
+            this.label87.Size = new System.Drawing.Size(100, 17);
+            this.label87.TabIndex = 1;
+            this.label87.Text = "Масса чугуна:";
+            // 
+            // label88
+            // 
+            this.label88.AutoSize = true;
+            this.label88.Location = new System.Drawing.Point(88, 529);
+            this.label88.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label88.Name = "label88";
+            this.label88.Size = new System.Drawing.Size(95, 17);
+            this.label88.TabIndex = 1;
+            this.label88.Text = "Масса стали:";
+            // 
             // SingleResultForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -2396,7 +2444,7 @@
             this.Controls.Add(this.tabControl1);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "SingleResultForm";
-            this.Text = "Результат рассчета конкретного случая";
+            this.Text = "Результат расчета конкретного случая";
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
@@ -2611,5 +2659,9 @@
         private System.Windows.Forms.Label label201;
         private System.Windows.Forms.Label label210;
         private System.Windows.Forms.Label label200;
+        private System.Windows.Forms.Label label88;
+        private System.Windows.Forms.Label label87;
+        private System.Windows.Forms.Label label59;
+        private System.Windows.Forms.Label label49;
     }
 }

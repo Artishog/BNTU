@@ -47,6 +47,8 @@ namespace BNTU_project
             textBox13.Text = mainForm.car.U0.ToString();
             textBox14.Text = mainForm.car.Ukp.ToString();
             textBox16.Text = mainForm.car.kpd_tr.ToString();
+            textBox15.Text = Constants.fi.ToString();
+            textBox17.Text = Constants.psi.ToString();
 
             this.textBox1.Select();
         }
@@ -71,6 +73,8 @@ namespace BNTU_project
                 mainForm.car.U0 = double.Parse(textBox13.Text);
                 mainForm.car.Ukp = double.Parse(textBox14.Text);
                 mainForm.car.kpd_tr = double.Parse(textBox16.Text);
+                Constants.fi = double.Parse(textBox15.Text);
+                Constants.psi = double.Parse(textBox17.Text);
             }
             catch (Exception ex)
             {

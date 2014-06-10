@@ -188,7 +188,7 @@ namespace BNTU_project
 
         public void calc_mrk(double m_dif)
         {
-            _mrk = _m_korp + _msh1 + _msh2 + _msh3 + _mv1 + _mv2 + _mv3 + m_dif;
+            _mrk = _m_korp + _msh1 + _msh2 + _msh3 + _mv1 + _mv2 + _mv3 + m_dif + _mupr;
         }
 
     }

@@ -135,7 +135,7 @@ namespace BNTU_project
             calc_bf_shest();
         }
 
-        public void calc_SecondPair(GearwheelPair gearwheelPair1, int beta, double mn, int ha_star, double hf_star, double c_star, double Urk, double U2st)
+        public void calc_SecondPair(GearwheelPair gearwheelPair1, int beta, double mn, int ha_star, double hf_star, double c_star, double Urk, double U2st, int kinematicScheme, double aw1)
         {
             _U = U2st;
             _mt = gearwheelPair1.mt;
@@ -153,7 +153,7 @@ namespace BNTU_project
             calc_d_kol();
             calc_da_kol(mn, ha_star);
             calc_df_kol(mn, hf_star, c_star);
-            calc2_aw2_d(gearwheelPair1.beta_d, mn);
+            calc2_aw2_d(gearwheelPair1.beta_d, mn, kinematicScheme, aw1);
         }
 
         public bool isValid()
@@ -166,9 +166,12 @@ namespace BNTU_project
             return result;
         }
 
-        public void calc2_aw2_d(double betd_d, double mn)
+        public void calc2_aw2_d(double betd_d, double mn, int kinematicScheme, double aw1)
         {
-            _aw2_d = (mn * _z_sum) / (2 * Math.Cos(DegreeToRadian(beta_d)));
+            if (kinematicScheme <= 3)
+                _aw2_d = (mn * _z_sum) / (2 * Math.Cos(DegreeToRadian(beta_d)));
+            else
+                _aw2_d = aw1;
         }
 
         public void calc2_z_kol(double z1_kol, double Urk, double U1_d)

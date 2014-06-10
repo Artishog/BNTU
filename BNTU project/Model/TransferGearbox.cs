@@ -46,6 +46,7 @@ namespace BNTU_project
         protected double _msh5; //масса шестерни
         protected double _mrk; //масса раздаточной коробки
         protected double _Supr = 50; //место отведенное под органы управления
+        protected double _mupr = 0; //масса органов управления
         protected int _kinematicScheme; //номер кинематической схемы
         protected bool _needRecalculation = false;
 
@@ -322,6 +323,12 @@ namespace BNTU_project
         {
             get { return _Supr; }
             set { _Supr = value; }
+        }
+
+        public double mupr
+        {
+            get { return _mupr; }
+            set { _mupr = value; }
         }
 
         public int kinematicScheme

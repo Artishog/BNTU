@@ -108,7 +108,7 @@ namespace BNTU_project
             this.currentGearwheelPair1.calc_FirstPair(currentTransferGearbox.aw1, this.currentGearwheel.beta, this.currentGearwheel.mn, this.currentGearwheel.ha_star, this.currentGearwheel.hf_star, this.currentGearwheel.c_star, this.currentGearwheel.coef_bw, currentTransferGearbox.U1st);
 
             //GearwhellPair2 parameters
-            this.currentGearwheelPair2.calc_SecondPair(this.currentGearwheelPair1, this.currentGearwheel.beta, this.currentGearwheel.mn, this.currentGearwheel.ha_star, this.currentGearwheel.hf_star, this.currentGearwheel.c_star, this.currentCar.Urk, currentTransferGearbox.U2st);
+            this.currentGearwheelPair2.calc_SecondPair(this.currentGearwheelPair1, this.currentGearwheel.beta, this.currentGearwheel.mn, this.currentGearwheel.ha_star, this.currentGearwheel.hf_star, this.currentGearwheel.c_star, this.currentCar.Urk, currentTransferGearbox.U2st, currentTransferGearbox.kinematicScheme, currentTransferGearbox.aw1);
 
             //Differential parameters
             currentDifferential.calc_allStep1(this.currentCar, this.currentTransferGearbox);
@@ -116,7 +116,7 @@ namespace BNTU_project
             //Transfer gearbox parameters
             currentTransferGearbox.calc_allStep2();
 
-            currentDifferential.calc_allStep2();
+            currentDifferential.calc_allStep2(this.currentTransferGearbox.L2);
 
             currentTransferGearbox.calc_allStep3();
         }

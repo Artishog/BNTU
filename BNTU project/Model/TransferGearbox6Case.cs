@@ -19,7 +19,7 @@ namespace BNTU_project
         //Рассчет параметров
         public void checkCondition()
         {
-            if (gearwheelPair2.df_kol < differential.d_korp + 3)
+            if (gearwheelPair1.df_shest < differential.d_korp + 3)
             {
                 _needRecalculation = true;
             }
@@ -130,25 +130,25 @@ namespace BNTU_project
 
         public void calc_L1(double bf_shest1, double l1, double bw1, double d_kol1, double s, double d_korp)
         {
-            if ((_aw2 < (d_kol1 / 2 + d_korp / 2 + 3)) && ((l1 - s - bf_shest1) >= _Supr))
+            if ((_aw2 < (d_kol1 / 2 + d_korp / 2 + 3)) && ((l1 - s - bw1 + 5) >= _Supr))
             {
                 _L1 = l1 + bw1 / 2 + bf_shest1 / 2 + 15;
                 return;
             }
 
-            if ((_aw2 < (d_kol1 / 2 + d_korp / 2 + 3)) && ((l1 - s - bf_shest1) < _Supr))
+            if ((_aw2 < (d_kol1 / 2 + d_korp / 2 + 3)) && ((l1 - s - bw1 + 5) < _Supr))
             {
                 _L1 = _Supr + bw1 + bf_shest1 + s + 10;
                 return;
             }
 
-            if ((_aw2 >= (d_kol1 / 2 + d_korp / 2 + 3)) && ((l1 - s - bf_shest1) < _Supr))
+            if ((_aw2 >= (d_kol1 / 2 + d_korp / 2 + 3)) && ((l1 - s - bw1 + 5) < _Supr))
             {
                 _L1 = _Supr + bw1 + bf_shest1 + s + 10;
                 return;
             }
 
-            if ((_aw2 >= (d_kol1 / 2 + d_korp / 2 + 3)) && ((l1 - s - bf_shest1) >= (_Supr + bf_shest1 / 2 + bw1 / 2)))
+            if ((_aw2 >= (d_kol1 / 2 + d_korp / 2 + 3)) && ((l1 - s - bw1 + 5) >= (_Supr + bf_shest1 / 2 + bw1 / 2)))
             {
                 _L1 = l1 + 10;
                 return;
@@ -222,7 +222,7 @@ namespace BNTU_project
 
         public void calc_mrk(double m_dif)
         {
-            _mrk = _m_korp + _msh1 + _msh2 + _msh3 + _msh4 + _msh5 + _mv1 + _mv2 + _mv3 + m_dif;
+            _mrk = _m_korp + _msh1 + _msh2 + _msh3 + _msh4 + _msh5 + _mv1 + _mv2 + _mv3 + m_dif + _mupr;
         }
 
     }

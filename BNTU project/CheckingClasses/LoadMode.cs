@@ -21,10 +21,11 @@ namespace BNTU_project
         private double _B; //Просто B
         private double _KPH; //Коэффициент пробега
         private double _KPF; //Коэффициент пробега
-        private double _ksi; //Относительный пробег
+        private double _ksi; //Относительное использование передач по пробегу
 
         public LoadMode()
         {
+            _ksi = 0.003;
         }
 
         //Методы
@@ -39,9 +40,8 @@ namespace BNTU_project
             calc_B(carType);
             calc_gamma_j();
             calc_gamma_mid();
-            calc_KPH();
+            calc_KPH(carType);
             calc_KPF();
-            calc_ksi();
         }
 
         private void calc_Md(double Memax, double Ukp1, double U_d1, int kinematicScheme)
@@ -139,21 +139,195 @@ namespace BNTU_project
         }
 
         //Вычисляется по графикам, нужно будет сделать, пока оставлены заглушки
-        private void calc_KPH()
+        private void calc_KPH(string carType)
         {
             _KPH = 0.09;
+
+            switch (carType)
+            {
+                case "Самосвал":
+                    //график один
+                    _KPH = getKPH_firstCase();
+                    break;
+                case "Грузовой":
+                    //график два
+                    _KPH = getKPH_firstCase();
+                    break;
+                case "Автобус городской":
+                    //график два
+                    _KPH = getKPH_firstCase();
+                    break;
+                case "Автобус междугородний":
+                    //график два
+                    _KPH = getKPH_firstCase();
+                    break;
+                default:
+                    //график один
+                    _KPH = getKPH_firstCase();
+                    break;
+
+            }
+        }
+
+        private double getKPH_firstCase()
+        {
+            double result = 0;
+            double X = _gamma_p / _gamma_mid;
+
+            if ((X >= 1) && ( X < 1.5))
+            {
+                result = GraphHelper.GetYbyX_decreasing(X, 1, 1.5, 0.25, 0.34);
+            }
+
+            if ((X >= 1.5) && ( X < 1.8))
+            {
+                result = GraphHelper.GetYbyX_decreasing(X, 1.5, 1.8, 0.2, 0.25);
+            }
+             
+            if ((X >= 1.8) && ( X < 2))
+            {
+                result = GraphHelper.GetYbyX_decreasing(X, 1.8, 2, 0.185, 0.2);
+            }
+
+            if ((X >= 2) && (X < 3))
+            {
+                result = GraphHelper.GetYbyX_decreasing(X, 2, 3, 0.115, 0.185);
+            }
+
+            if ((X >= 3) && (X < 3.2))
+            {
+                result = GraphHelper.GetYbyX_decreasing(X, 3, 3.2, 0.1, 0.115);
+            }
+
+            if ((X >= 3.2) && ( X < 3.7))
+            {
+                result = GraphHelper.GetYbyX_decreasing(X, 3.2, 3.7, 0.08, 0.1);
+            }
+
+            if ((X >= 3.7) && ( X < 4.25))
+            {
+                result = GraphHelper.GetYbyX_decreasing(X, 3.7, 4.25, 0.06, 0.08);
+            }
+
+            if ((X >= 4.25) && ( X < 5))
+            {
+                result = GraphHelper.GetYbyX_decreasing(X, 4.25, 5, 0.04, 0.06);
+            }
+
+            if ((X >= 5) && ( X < 6))
+            {
+                result = GraphHelper.GetYbyX_decreasing(X, 5, 6, 0.023, 0.04);
+            }
+
+            if ((X >= 6) && ( X < 6.35))
+            {
+                result = GraphHelper.GetYbyX_decreasing(X, 6, 6.35, 0.02, 0.023);
+            }
+
+            if ((X >= 6.35) && (X < 7))
+            {
+                result = GraphHelper.GetYbyX_decreasing(X, 6.35, 7, 0.017, 0.02);
+            }
+
+            if ((X >= 7) && (X < 8))
+            {
+                result = GraphHelper.GetYbyX_decreasing(X, 7, 8, 0.014, 0.017);
+            }
+
+            if ((X >= 8) && (X < 9))
+            {
+                result = GraphHelper.GetYbyX_decreasing(X, 8, 9, 0.01, 0.014);
+            }    
+
+            return result;
         }
 
         private void calc_KPF()
         {
             _KPF = 0.016;
+
+            _KPF = getKPF();
+
+        }
+
+        private double getKPF()
+        {
+            double result = 0;
+            double X = _gamma_p / _gamma_mid;
+
+            if ((X >= 1) && (X < 1.1))
+            {
+                result = GraphHelper.GetYbyX_decreasing(X, 1, 1.1, 0.1, 0.135);
+            } 
+
+            if ((X >= 1.1) && (X < 1.5))
+            {
+                result = GraphHelper.GetYbyX_decreasing(X, 1.1, 1.5, 0.09, 0.1);
+            } 
+
+            if ((X >= 1.5) && (X < 1.7))
+            {
+                result = GraphHelper.GetYbyX_decreasing(X, 1.5, 1.7, 0.08, 0.09);
+            } 
+
+            if ((X >= 1.7) && (X < 2))
+            {
+                result = GraphHelper.GetYbyX_decreasing(X, 1.7, 2, 0.06, 0.08);
+            } 
+
+            if ((X >= 2) && (X < 2.6))
+            {
+                result = GraphHelper.GetYbyX_decreasing(X, 2, 2.6, 0.04, 0.06);
+            }
+
+            if ((X >= 2.6) && (X < 3))
+            {
+                result = GraphHelper.GetYbyX_decreasing(X, 2.6, 3, 0.028, 0.04);
+            }
+
+            if ((X >= 3) && (X < 3.35))
+            {
+                result = GraphHelper.GetYbyX_decreasing(X, 3, 3.35, 0.02, 0.028);
+            }
+
+            if ((X >= 3.35) && (X < 4))
+            {
+                result = GraphHelper.GetYbyX_decreasing(X, 3.35, 4, 0.014, 0.02);
+            }
+
+            if ((X >= 4) && (X < 4.4))
+            {
+                result = GraphHelper.GetYbyX_decreasing(X, 4, 4.4, 0.01, 0.014);
+            } 
+
+            if ((X >= 4.4) && (X < 5))
+            {
+                result = GraphHelper.GetYbyX_decreasing(X, 4.4, 5, 0.006, 0.01);
+            }
+
+            if ((X >= 5) && (X < 6))
+            {
+                result = GraphHelper.GetYbyX_decreasing(X, 5, 6, 0.003, 0.006);
+            }
+
+            if ((X >= 6) && (X < 7))
+            {
+                result = GraphHelper.GetYbyX_decreasing(X, 6, 7, 0.0017, 0.003);
+            } 
+
+            if ((X >= 7) && (X < 9))
+            {
+                result = GraphHelper.GetYbyX_decreasing(X, 7, 9, 0.0006, 0.0017);
+            } 
+
+            return result;
         }
 
         //по таблице, пока заглушка
-        private void calc_ksi()
+        /*private void calc_ksi()
         {
             _ksi = 0.003;
-        }
+        }*/
 
         //Property
         public double Mp

@@ -52,6 +52,7 @@
     <Compile Include="CheckingClasses\Contact.cs" />
     <Compile Include="CheckingClasses\Endurance.cs" />
     <Compile Include="CheckingClasses\Flexion.cs" />
+    <Compile Include="CheckingClasses\GraphHelper.cs" />
     <Compile Include="DependenceGraphicForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -130,12 +131,6 @@
       <DependentUpon>SingleResultForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Model\TransferGearbox2Case.cs" />
-    <Compile Include="SteelForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="SteelForm.Designer.cs">
-      <DependentUpon>SteelForm.cs</DependentUpon>
-    </Compile>
     <Compile Include="TransferGearboxSettingsForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -179,9 +174,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="SingleResultForm.resx">
       <DependentUpon>SingleResultForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="SteelForm.resx">
-      <DependentUpon>SteelForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TransferGearboxSettingsForm.resx">
       <DependentUpon>TransferGearboxSettingsForm.cs</DependentUpon>

@@ -117,19 +117,19 @@ namespace BNTU_project
 
             if ((_aw2 < (d_kol1 / 2 + d_korp / 2 + 3)) && (_Supr > (l1 + 10)))
             {
-                _L1 = _Supr + bw1 + bf_shest1 + 10;
+                _L1 = _Supr + bw1 + bf_shest1 / 2 + bw1 / 2 +10;
                 return;
             }
 
             if ((_aw2 >= (d_kol1 / 2 + d_korp / 2 + 3)) && ((l1 + 5) < (_Supr + bw1)))
             {
-                _L1 = _Supr + bw1 + bf_shest1 + 10;
+                _L1 = _Supr + bw1 / 2 + bf_shest1 + 5 + bf_shest1 / 2 + 5;
                 return;
             }
 
             if ((_aw2 >= (d_kol1 / 2 + d_korp / 2 + 3)) && ((l1 + 5) >= (_Supr + bw1)))
             {
-                _L1 = l1 + bw1 / 2 + bf_shest1 / 2 + 15;
+                _L1 = l1 + bw1 + 15;
                 return;
             }
         }
@@ -201,7 +201,7 @@ namespace BNTU_project
 
         public void calc_mrk(double m_dif)
         {
-            _mrk = _m_korp + _msh1 + _msh2 + _msh3 + _msh4 + _msh5 + _mv1 + _mv2 + _mv3 + m_dif;
+            _mrk = _m_korp + _msh1 + _msh2 + _msh3 + _msh4 + _msh5 + _mv1 + _mv2 + _mv3 + m_dif + _mupr;
         }
     }
 }

@@ -47,7 +47,7 @@ namespace BNTU_project
         //Методы
         public void calc_All(double Mp, double U_d1, double beta_d, double bw, double mn, 
             double np, double z_kol1, double z_shest1, double d_shest1, double bf_shest1, 
-            double d_kol1, double Ukp1, double ksi, double r0, double PHlimb_star, double KPH, int NHO)
+            double d_kol1, double Ukp1, double ksi, double r0, double PHlimb_star, double KPH, int NHO, int kinematicScheme)
         {
             calc_Ft(d_shest1, Mp);
             calc_ZH(U_d1, beta_d);
@@ -60,7 +60,7 @@ namespace BNTU_project
             calc_psi_bd(bw, d_shest1);
             calc_v(d_shest1, U_d1, np);
             calc_KH_omega();
-            calc_K0_beta();
+            calc_K0_beta(kinematicScheme);
             calc_KH_beta();
             calc_Kve();
             calc_delta0(mn);
@@ -86,7 +86,7 @@ namespace BNTU_project
             if (_LH_kol < L0)
                 result = false;
 
-            return true;
+            return result;
         }
 
         private void calc_Ft(double d_shest1, double Mp)
@@ -113,6 +113,627 @@ namespace BNTU_project
         private void calc_z_eps()
         {
             _z_eps = 0.65;
+            _z_eps = getZ_eps();
+        }
+
+        private double getZ_eps()
+        {
+            double result = 0;
+
+            var eps_alpha1 = 1.9;
+            var eps_alpha2 = 1.8;
+            var tempRes1 = getZ_eps_case1();
+            var tempRes2 = getZ_eps_case2();
+            if ((_eps_alpha > eps_alpha2) && (_eps_alpha <= eps_alpha1))
+            {
+                result = tempRes2 - (tempRes2 - tempRes1) * (_eps_alpha - eps_alpha2) / (eps_alpha1 - eps_alpha2);
+            }
+
+            eps_alpha1 = 1.8;
+            eps_alpha2 = 1.7;
+            tempRes1 = getZ_eps_case2();
+            tempRes2 = getZ_eps_case3();
+            if ((_eps_alpha > eps_alpha2) && (_eps_alpha <= eps_alpha1))
+            {
+                result = tempRes2 - (tempRes2 - tempRes1) * (_eps_alpha - eps_alpha2) / (eps_alpha1 - eps_alpha2);
+            }
+
+            eps_alpha1 = 1.7;
+            eps_alpha2 = 1.6;
+            tempRes1 = getZ_eps_case3();
+            tempRes2 = getZ_eps_case4();
+            if ((_eps_alpha > eps_alpha2) && (_eps_alpha <= eps_alpha1))
+            {
+                result = tempRes2 - (tempRes2 - tempRes1) * (_eps_alpha - eps_alpha2) / (eps_alpha1 - eps_alpha2);
+            }
+
+            eps_alpha1 = 1.6;
+            eps_alpha2 = 1.5;
+            tempRes1 = getZ_eps_case4();
+            tempRes2 = getZ_eps_case5();
+            if ((_eps_alpha > eps_alpha2) && (_eps_alpha <= eps_alpha1))
+            {
+                result = tempRes2 - (tempRes2 - tempRes1) * (_eps_alpha - eps_alpha2) / (eps_alpha1 - eps_alpha2);
+            }
+
+            eps_alpha1 = 1.5;
+            eps_alpha2 = 1.4;
+            tempRes1 = getZ_eps_case5();
+            tempRes2 = getZ_eps_case6();
+            if ((_eps_alpha > eps_alpha2) && (_eps_alpha <= eps_alpha1))
+            {
+                result = tempRes2 - (tempRes2 - tempRes1) * (_eps_alpha - eps_alpha2) / (eps_alpha1 - eps_alpha2);
+            }
+
+            eps_alpha1 = 1.4;
+            eps_alpha2 = 1.3;
+            tempRes1 = getZ_eps_case6();
+            tempRes2 = getZ_eps_case7();
+            if ((_eps_alpha > eps_alpha2) && (_eps_alpha <= eps_alpha1))
+            {
+                result = tempRes2 - (tempRes2 - tempRes1) * (_eps_alpha - eps_alpha2) / (eps_alpha1 - eps_alpha2);
+            }
+
+            eps_alpha1 = 1.3;
+            eps_alpha2 = 1.2;
+            tempRes1 = getZ_eps_case7();
+            tempRes2 = getZ_eps_case8();
+            if ((_eps_alpha > eps_alpha2) && (_eps_alpha <= eps_alpha1))
+            {
+                result = tempRes2 - (tempRes2 - tempRes1) * (_eps_alpha - eps_alpha2) / (eps_alpha1 - eps_alpha2);
+            }
+
+            eps_alpha1 = 1.2;
+            eps_alpha2 = 1.1;
+            tempRes1 = getZ_eps_case8();
+            tempRes2 = getZ_eps_case9();
+            if ((_eps_alpha > eps_alpha2) && (_eps_alpha <= eps_alpha1))
+            {
+                result = tempRes2 - (tempRes2 - tempRes1) * (_eps_alpha - eps_alpha2) / (eps_alpha1 - eps_alpha2);
+            }
+
+            eps_alpha1 = 1.1;
+            eps_alpha2 = 1;
+            tempRes1 = getZ_eps_case9();
+            tempRes2 = getZ_eps_case10();
+            if ((_eps_alpha > eps_alpha2) && (_eps_alpha <= eps_alpha1))
+            {
+                result = tempRes2 - (tempRes2 - tempRes1) * (_eps_alpha - eps_alpha2) / (eps_alpha1 - eps_alpha2);
+            }
+
+            eps_alpha1 = 1;
+            eps_alpha2 = 0.9;
+            tempRes1 = getZ_eps_case10();
+            tempRes2 = getZ_eps_case11();
+            if ((_eps_alpha > eps_alpha2) && (_eps_alpha <= eps_alpha1))
+            {
+                result = tempRes2 - (tempRes2 - tempRes1) * (_eps_alpha - eps_alpha2) / (eps_alpha1 - eps_alpha2);
+            }
+
+            return result;
+        }
+
+        private double getZ_eps_case1()
+        {
+            double result = 0;
+            var X = _eps_beta;
+
+            if ((X >= 0.1) && (X < 0.11))
+            {
+                result = GraphHelper.GetYbyX_decreasing(X, 0.1, 0.11, 0.91, 1);
+            } 
+
+            if ((X >= 0.11) && (X < 0.125))
+            {
+                result = GraphHelper.GetYbyX_decreasing(X, 0.11, 0.125, 0.833, 0.91);
+            } 
+
+            if ((X >= 0.125) && (X < 0.14))
+            {
+                result = GraphHelper.GetYbyX_decreasing(X, 0.125, 0.14, 0.789, 0.833);
+            } 
+
+            if ((X >= 0.14) && (X < 0.17))
+            {
+                result = GraphHelper.GetYbyX_decreasing(X, 0.14, 0.17, 0.714, 0.783);
+            } 
+
+            if ((X >= 0.17) && (X < 0.27))
+            {
+                result = GraphHelper.GetYbyX_decreasing(X, 0.17, 0.27, 0.625, 0.714);
+            } 
+
+            if ((X >= 0.27) && (X < 0.37))
+            {
+                result = GraphHelper.GetYbyX_decreasing(X, 0.27, 0.37, 0.588, 0.625);
+            } 
+
+            if ((X >= 0.37) && (X < 0.525))
+            {
+                result = GraphHelper.GetYbyX_decreasing(X, 0.37, 0.525, 0.556, 0.588);
+            } 
+
+            if ((X >= 0.525) && (X < 0.7))
+            {
+                result = GraphHelper.GetYbyX_decreasing(X, 0.525, 0.7, 0.535, 0.556);
+            } 
+
+            if ((X >= 0.7) && (X < 1))
+            {
+                result = GraphHelper.GetYbyX_decreasing(X, 0.7, 1, 0.53, 0.535);
+            } 
+
+            if ((X >= 1) && (X < 1.1))
+            {
+                result = GraphHelper.GetYbyX_increasing(X, 1, 1.1, 0.53, 0.55);
+            } 
+
+            if ((X >= 1.1) && (X < 1.5))
+            {
+                result = GraphHelper.GetYbyX_decreasing(X, 1.1, 1.5, 0.53, 0.55);
+            } 
+
+            if ((X >= 1.5) && (X < 1.8))
+            {
+                result = GraphHelper.GetYbyX_decreasing(X, 1.5, 1.8, 0.526, 0.53);
+            }
+
+            return result;
+        }
+
+        private double getZ_eps_case2()
+        {
+            double result = 0;
+            var X = _eps_beta;
+
+            if ((X >= 0.1) && (X < 0.2))
+            {
+                result = GraphHelper.GetYbyX_decreasing(X, 0.1, 0.2, 0.1, 1.5);
+            }
+
+            if ((X >= 0.2) && (X < 0.25))
+            {
+                result = GraphHelper.GetYbyX_decreasing(X, 0.2, 0.25, 0.833, 1);
+            }
+
+            if ((X >= 0.25) && (X < 0.3))
+            {
+                result = GraphHelper.GetYbyX_decreasing(X, 0.25, 0.3, 0.789, 0.833);
+            }
+
+            if ((X >= 0.3) && (X < 0.35))
+            {
+                result = GraphHelper.GetYbyX_decreasing(X, 0.3, 0.35, 0.714, 0.789);
+            }
+
+            if ((X >= 0.35) && (X < 0.4))
+            {
+                result = GraphHelper.GetYbyX_decreasing(X, 0.35, 0.4, 0.676, 0.714);
+            }
+
+            if ((X >= 0.4) && (X < 0.52))
+            {
+                result = GraphHelper.GetYbyX_decreasing(X, 0.4, 0.52, 0.625, 0.676);
+            }
+
+            if ((X >= 0.52) && (X < 0.7))
+            {
+                result = GraphHelper.GetYbyX_decreasing(X, 0.52, 0.7, 0.588, 0.625);
+            }
+
+            if ((X >= 0.7) && (X < 1))
+            {
+                result = GraphHelper.GetYbyX_decreasing(X, 0.7, 1, 0.556, 0.588);
+            }
+
+            if ((X >= 1) && (X < 1.1))
+            {
+                result = GraphHelper.GetYbyX_increasing(X, 1, 1.1, 0.556, 0.58);
+            }
+
+            if ((X >= 1.1) && (X < 1.2))
+            {
+                result = GraphHelper.GetYbyX_increasing(X, 1.1, 1.2, 0.58, 0.6);
+            }
+
+            if ((X >= 1.2) && (X < 1.5))
+            {
+                result = GraphHelper.GetYbyX_decreasing(X, 1.2, 1.5, 0.57,0.6);
+            }
+
+            if ((X >= 1.5) && (X < 1.8))
+            {
+                result = GraphHelper.GetYbyX_decreasing(X, 1.5, 1.8, 0.55, 0.57);
+            }
+
+            return result;
+        }
+
+        private double getZ_eps_case3()
+        {
+            double result = 0;
+            var X = _eps_beta;
+
+            if ((X >= 0.2) && (X < 0.3))
+            {
+                result = GraphHelper.GetYbyX_decreasing(X, 0.2, 0.3, 1, 1.32);
+            }
+
+            if ((X >= 0.3) && (X < 0.33))
+            {
+                result = GraphHelper.GetYbyX_decreasing(X, 0.3, 0.33, 0.91, 1);
+            }
+
+            if ((X >= 0.33) && (X < 0.38))
+            {
+                result = GraphHelper.GetYbyX_decreasing(X, 0.33, 0.38, 0.833, 0.91);
+            }
+
+            if ((X >= 0.38) && (X < 0.43))
+            {
+                result = GraphHelper.GetYbyX_decreasing(X, 0.38, 0.43, 0.789, 0.833);
+            }
+
+            if ((X >= 0.43) && (X < 0.5))
+            {
+                result = GraphHelper.GetYbyX_decreasing(X, 0.43, 0.5, 0.714, 0.789);
+            }
+
+            if ((X >= 0.5) && (X < 0.6))
+            {
+                result = GraphHelper.GetYbyX_decreasing(X, 0.5, 0.6, 0.666, 0.714);
+            }
+
+            if ((X >= 0.6) && (X < 0.75))
+            {
+                result = GraphHelper.GetYbyX_decreasing(X, 0.6, 0.75, 0.625, 0.666);
+            }
+
+            if ((X >= 0.75) && (X < 1))
+            {
+                result = GraphHelper.GetYbyX_decreasing(X, 0.75, 1, 0.588, 0.625);
+            }
+
+            if ((X >= 1) && (X < 1.15))
+            {
+                result = GraphHelper.GetYbyX_increasing(X, 1, 1.15, 0.588, 0.625);
+            }
+
+            if ((X >= 1.15) && (X < 1.3))
+            {
+                result = GraphHelper.GetYbyX_increasing(X, 1.15, 1.3, 0.625, 0.645);
+            }
+
+            if ((X >= 1.3) && (X < 1.6))
+            {
+                result = GraphHelper.GetYbyX_decreasing(X, 1.3, 1.6, 0.61, 0.645);
+            }
+
+            if ((X >= 1.6) && (X < 1.8))
+            {
+                result = GraphHelper.GetYbyX_decreasing(X, 1.6, 1.8, 0.6, 0.61);
+            }
+
+            return result;
+        }
+
+        private double getZ_eps_case4()
+        {
+            double result = 0;
+            var X = _eps_beta;
+
+            if ((X >= 0.3) && (X < 0.4))
+            {
+                result = GraphHelper.GetYbyX_decreasing(X, 0.3, 0.4, 1, 1.25);
+            }
+
+            if ((X >= 0.4) && (X < 0.5))
+            {
+                result = GraphHelper.GetYbyX_decreasing(X, 0.4, 0.5, 0.833, 1);
+            }
+
+            if ((X >= 0.5) && (X < 0.6))
+            {
+                result = GraphHelper.GetYbyX_decreasing(X, 0.5, 0.6, 0.77, 0.833);
+            }
+
+            if ((X >= 0.6) && (X < 0.67))
+            {
+                result = GraphHelper.GetYbyX_decreasing(X, 0.6, 0.67, 0.714, 0.77);
+            }
+
+            if ((X >= 0.67) && (X < 0.8))
+            {
+                result = GraphHelper.GetYbyX_decreasing(X, 0.67, 0.8, 0.666, 0.714);
+            }
+
+            if ((X >= 0.8) && (X < 1))
+            {
+                result = GraphHelper.GetYbyX_decreasing(X, 0.8, 1, 0.625, 0.666);
+            }
+
+            if ((X >= 1) && (X < 1.2))
+            {
+                result = GraphHelper.GetYbyX_increasing(X, 1, 1.2, 0.625, 0.666);
+            }
+
+            if ((X >= 1.2) && (X < 1.4))
+            {
+                result = GraphHelper.GetYbyX_increasing(X, 1.2, 1.4, 0.666, 0.7);
+            }
+
+            if ((X >= 1.4) && (X < 1.6))
+            {
+                result = GraphHelper.GetYbyX_decreasing(X, 1.4, 1.6, 0.666, 0.7);
+            }
+
+            if ((X >= 1.6) && (X < 1.8))
+            {
+                result = GraphHelper.GetYbyX_decreasing(X, 1.6, 1.8, 0.64, 0.67);
+            }
+
+            return result;
+        }
+
+        private double getZ_eps_case5()
+        {
+            double result = 0;
+            var X = _eps_beta;
+
+            if ((X >= 0.4) && (X < 0.5))
+            {
+                result = GraphHelper.GetYbyX_decreasing(X, 0.4, 0.5, 1, 1.18);
+            }
+
+            if ((X >= 0.5) && (X < 0.6))
+            {
+                result = GraphHelper.GetYbyX_decreasing(X, 0.5, 0.6, 0.87, 1);
+            }
+
+            if ((X >= 0.6) && (X < 0.64))
+            {
+                result = GraphHelper.GetYbyX_decreasing(X, 0.6, 0.64, 0.833, 0.87);
+            }
+
+            if ((X >= 0.64) && (X < 0.72))
+            {
+                result = GraphHelper.GetYbyX_decreasing(X, 0.64, 0.72, 0.789, 0.833);
+            }
+
+            if ((X >= 0.72) && (X < 0.83))
+            {
+                result = GraphHelper.GetYbyX_decreasing(X, 0.72, 0.83, 0.714, 0.789);
+            }
+
+            if ((X >= 0.83) && (X < 1))
+            {
+                result = GraphHelper.GetYbyX_decreasing(X, 0.83, 1, 0.666, 0.714);
+            }
+
+            if ((X >= 1) && (X < 1.25))
+            {
+                result = GraphHelper.GetYbyX_increasing(X, 1, 1.25, 0.666, 0.714);
+            }
+
+            if ((X >= 1.25) && (X < 1.5))
+            {
+                result = GraphHelper.GetYbyX_increasing(X, 1.25, 1.5, 0.714, 0.776);
+            }
+
+            if ((X >= 1.5) && (X < 1.65))
+            {
+                result = GraphHelper.GetYbyX_decreasing(X, 1.5, 1.65, 0.714, 0.776);
+            }
+
+            if ((X >= 1.65) && (X < 1.8))
+            {
+                result = GraphHelper.GetYbyX_decreasing(X, 1.65, 1.8, 0.69, 0.714);
+            }
+
+            return result;
+        }
+
+        private double getZ_eps_case6()
+        {
+            double result = 0;
+            var X = eps_beta;
+
+            if ((X >= 0.5) && (X < 0.6))
+            {
+                result = GraphHelper.GetYbyX_decreasing(X, 0.5, 0.6, 1, 1.15);
+            }
+
+            if ((X >= 0.6) && (X < 0.67))
+            {
+                result = GraphHelper.GetYbyX_decreasing(X, 0.6, 0.67, 0.91, 1);
+            }
+
+            if ((X >= 0.67) && (X < 0.75))
+            {
+                result = GraphHelper.GetYbyX_decreasing(X, 0.67, 0.75, 0.833, 0.91);
+            }
+
+            if ((X >= 0.75) && (X < 0.85))
+            {
+                result = GraphHelper.GetYbyX_decreasing(X, 0.75, 0.85, 0.789, 0.833);
+            }
+
+            if ((X >= 0.85) && (X < 1))
+            {
+                result = GraphHelper.GetYbyX_decreasing(X, 0.85, 1, 0.714, 0.789);
+            }
+
+            if ((X >= 1) && (X < 1.3))
+            {
+                result = GraphHelper.GetYbyX_increasing(X, 1, 1.3, 0.714, 0.789);
+            }
+
+            if ((X >= 1.3) && (X < 1.6))
+            {
+                result = GraphHelper.GetYbyX_increasing(X, 1.3, 1.6, 0.789, 0.81);
+            }
+
+            if ((X >= 1.6) && (X < 1.7))
+            {
+                result = GraphHelper.GetYbyX_decreasing(X, 1.6, 1.7, 0.789, 0.81);
+            }
+
+            if ((X >= 1.7) && (X < 1.8))
+            {
+                result = GraphHelper.GetYbyX_decreasing(X, 1.7, 1.8, 0.76, 0.789);
+            }
+
+            return result;
+        }
+
+        private double getZ_eps_case7()
+        {
+            double result = 0;
+            var X = eps_beta;
+
+            if ((X >= 0.6) && (X < 0.7))
+            {
+                result = GraphHelper.GetYbyX_decreasing(X, 0.6, 0.7, 1, 1.15);
+            }
+
+            if ((X >= 0.7) && (X < 0.8))
+            {
+                result = GraphHelper.GetYbyX_decreasing(X, 0.7, 0.8, 0.89, 1);
+            }
+
+            if ((X >= 0.8) && (X < 0.86))
+            {
+                result = GraphHelper.GetYbyX_decreasing(X, 0.8, 0.86, 0.833, 0.89);
+            }
+
+            if ((X >= 0.86) && (X < 1))
+            {
+                result = GraphHelper.GetYbyX_decreasing(X, 0.86, 1, 0.789, 0.833);
+            }
+
+            if ((X >= 1) && (X < 1.45))
+            {
+                result = GraphHelper.GetYbyX_increasing(X, 1, 1.45, 0.789, 0.833);
+            }
+
+            if ((X >= 1.45) && (X < 1.7))
+            {
+                result = GraphHelper.GetYbyX_increasing(X, 1.45, 1.7, 0.833, 0.85);
+            }
+
+            if ((X >= 1.7) && (X < 1.74))
+            {
+                result = GraphHelper.GetYbyX_decreasing(X, 1.7, 1.74, 0.833, 0.85);
+            }
+
+            if ((X >= 1.74) && (X < 1.8))
+            {
+                result = GraphHelper.GetYbyX_decreasing(X, 1.74, 1.8, 0.82, 0.833);
+            }
+
+            return result;
+        }
+
+        private double getZ_eps_case8()
+        {
+            double result = 0;
+            var X = eps_beta;
+
+            if ((X >= 0.7) && (X < 0.8))
+            {
+                result = GraphHelper.GetYbyX_decreasing(X, 0.7, 0.8, 1, 1.15);
+            }
+
+            if ((X >= 0.8) && (X < 0.87))
+            {
+                result = GraphHelper.GetYbyX_decreasing(X, 0.8, 0.87, 0.91, 1);
+            }
+
+            if ((X >= 0.87) && (X < 1))
+            {
+                result = GraphHelper.GetYbyX_decreasing(X, 0.87, 1, 0.833, 0.91);
+            }
+
+            if ((X >= 1) && (X < 1.4))
+            {
+                result = GraphHelper.GetYbyX_increasing(X, 1, 1.4, 0.833, 0.88);
+            }
+
+            if ((X >= 1.4) && (X < 1.8))
+            {
+                result = GraphHelper.GetYbyX_increasing(X, 1.4, 1.8, 0.88, 0.895);
+            }
+
+            return result;
+        }
+
+        private double getZ_eps_case9()
+        {
+            double result = 0;
+            var X = eps_beta;
+
+            if ((X >= 0.8) && (X < 0.9))
+            {
+                result = GraphHelper.GetYbyX_decreasing(X, 0.8, 0.9, 1, 1.15);
+            }
+
+            if ((X >= 0.9) && (X < 1))
+            {
+                result = GraphHelper.GetYbyX_decreasing(X, 0.9, 1, 0.91, 1);
+            }
+
+            if ((X >= 1) && (X < 1.5))
+            {
+                result = GraphHelper.GetYbyX_increasing(X, 1, 1.5, 0.91, 0.955);
+            }
+
+            if ((X >= 1.5) && (X < 1.8))
+            {
+                result = 0.955;
+            }
+
+            return result;
+        }
+
+        private double getZ_eps_case10()
+        {
+            double result = 0;
+            var X = eps_beta;
+
+            if ((X >= 0) && (X < 1.8))
+            {
+                result = 1;
+            }
+
+            return result;
+        }
+
+        private double getZ_eps_case11()
+        {
+            double result = 0;
+            var X = eps_beta;
+
+            if ((X >= 0.5) && (X < 1))
+            {
+                result = GraphHelper.GetYbyX_decreasing(X, 0.5, 1, 1.111, 1.23);
+            }
+
+            if ((X >= 1) && (X < 1.1))
+            {
+                result = GraphHelper.GetYbyX_increasing(X, 1, 1.1, 1.111, 1.22);
+            }
+
+            if ((X >= 1.1) && (X < 1.5))
+            {
+                result = GraphHelper.GetYbyX_decreasing(X, 1.1, 1.5, 1.13, 1.22);
+            }
+
+            if ((X >= 1.5) && (X < 1.8))
+            {
+                result = GraphHelper.GetYbyX_decreasing(X, 1.5, 1.8, 1.111, 1.13);
+            }
+
+            return result;
         }
 
         private void calc_KH_psi()
@@ -208,9 +829,79 @@ namespace BNTU_project
         }
 
         //Заглушка, необходимо считать по графику
-        private void calc_K0_beta()
+        private void calc_K0_beta(int kinematicScheme)
         {
             _K0_beta = 1.09;
+            getK0_beta(kinematicScheme);
+        }
+
+        private double getK0_beta(int kinematicScheme)
+        {
+            double result = 0;
+            var X = _psi_bd;
+            X = 0.5;
+
+            if (kinematicScheme <= 3)
+            {
+                if ((X >= 0) && (X < 0.2))
+                {
+                    result = GraphHelper.GetYbyX_increasing(X, 0, 0.2, 1, 1.08);
+                }
+
+                if ((X >= 0.2) && (X < 0.4))
+                {
+                    result = GraphHelper.GetYbyX_increasing(X, 0.2, 0.4, 1.08, 1.17);
+                }
+
+                if ((X >= 0.4) && (X < 0.6))
+                {
+                    result = GraphHelper.GetYbyX_increasing(X, 0.4, 0.6, 1.17, 1.27);
+                }
+
+                if ((X >= 0.6) && (X < 0.8))
+                {
+                    result = GraphHelper.GetYbyX_increasing(X, 0.6, 0.8, 1.27, 1.4);
+                }
+
+                if ((X >= 0.8) && (X < 0.88))
+                {
+                    result = GraphHelper.GetYbyX_increasing(X, 0.8, 0.88, 1.4, 1.46);
+                }
+            }
+            else
+            {
+                if ((X >= 0) && (X < 0.2))
+                {
+                    result = GraphHelper.GetYbyX_increasing(X, 0, 0.2, 1, 1.06);
+                } 
+
+                if ((X >= 0.2) && (X < 0.4))
+                {
+                    result = GraphHelper.GetYbyX_increasing(X, 0.2, 0.4, 1.06, 1.125);
+                } 
+
+                if ((X >= 0.4) && (X < 0.6))
+                {
+                    result = GraphHelper.GetYbyX_increasing(X, 0.4, 0.6, 1.125, 1.2);
+                } 
+
+                if ((X >= 0.6) && (X < 0.8))
+                {
+                    result = GraphHelper.GetYbyX_increasing(X, 0.6, 0.6, 1.2, 1.28);
+                } 
+
+                if ((X >= 0.8) && (X < 1))
+                {
+                    result = GraphHelper.GetYbyX_increasing(X, 0.8, 1, 1.28, 1.38);
+                } 
+
+                if ((X >= 1) && (X < 1.12))
+                {
+                    result = GraphHelper.GetYbyX_increasing(X, 1, 1.12, 1.38, 1.46);
+                } 
+            }
+
+            return result;
         }
 
         private void calc_KH_beta()
@@ -222,6 +913,35 @@ namespace BNTU_project
         private void calc_Kve()
         {
             _Kve = 1.2;
+            _Kve = getKve();
+        }
+
+        private double getKve()
+        {
+            double result = 0;
+            var X = _v;
+
+            if ((X >= 0.4) && (X < 6))
+            {
+                result = GraphHelper.GetYbyX_increasing(X, 0.4, 6, 1, 1.23);
+            } 
+
+            if ((X >= 6) && (X < 8))
+            {
+                result = GraphHelper.GetYbyX_increasing(X, 6, 8, 1.23, 1.28);
+            } 
+
+            if ((X >= 8) && (X < 9))
+            {
+                result = GraphHelper.GetYbyX_increasing(X, 8, 9, 1.28, 1.295);
+            } 
+
+            if ((X >= 9) && (X < 10))
+            {
+                result = GraphHelper.GetYbyX_increasing(X, 9, 10, 1.295, 1.3);
+            } 
+
+            return result;
         }
 
         private void calc_delta0(double mn)

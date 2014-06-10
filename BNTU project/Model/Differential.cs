@@ -39,7 +39,7 @@ namespace BNTU_project
         protected double _V_dif;
 
         public abstract void calc_allStep1(Car car, TransferGearbox transferGearbox);
-        public abstract void calc_allStep2();
+        public abstract void calc_allStep2(double L2);
 
         public Differential()
         {

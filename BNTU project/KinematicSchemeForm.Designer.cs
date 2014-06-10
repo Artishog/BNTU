@@ -226,7 +226,7 @@
             this.Controls.Add(this.panel1);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "KinematicSchemeForm";
-            this.Text = "KinematicSchemeForm";
+            this.Text = "Кинематические схемы";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);

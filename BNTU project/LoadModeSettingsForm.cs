@@ -22,6 +22,7 @@ namespace BNTU_project
 
             textBox1.Text = mainForm.loadMode.Kpl.ToString();
             textBox2.Text = mainForm.loadMode.gamma_v.ToString();
+            textBox3.Text = mainForm.loadMode.ksi.ToString();
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -30,6 +31,7 @@ namespace BNTU_project
             {
                 mainForm.loadMode.Kpl = double.Parse(textBox1.Text);
                 mainForm.loadMode.gamma_v = double.Parse(textBox2.Text);
+                mainForm.loadMode.ksi = double.Parse(textBox3.Text);
             }
             catch (FormatException ex)
             {

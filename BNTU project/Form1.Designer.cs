@@ -38,7 +38,6 @@
             this.параметрыШестерниToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.параметрыДифференциалаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.параметрыРаздаточнойКоробкиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.выборКинематическоСхемыToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.проверочныйРасчетToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.нагрузочныйРежимToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.стальToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -49,7 +48,6 @@
             this.хГТToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.х2Н4ВАToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.х2Н4АToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.помощьToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
@@ -97,8 +95,7 @@
             this.файлToolStripMenuItem,
             this.параметрыРасчетаToolStripMenuItem,
             this.проверочныйРасчетToolStripMenuItem,
-            this.стальToolStripMenuItem,
-            this.помощьToolStripMenuItem});
+            this.стальToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
@@ -117,7 +114,7 @@
             // выходToolStripMenuItem
             // 
             this.выходToolStripMenuItem.Name = "выходToolStripMenuItem";
-            this.выходToolStripMenuItem.Size = new System.Drawing.Size(122, 24);
+            this.выходToolStripMenuItem.Size = new System.Drawing.Size(152, 24);
             this.выходToolStripMenuItem.Text = "Выход";
             // 
             // параметрыРасчетаToolStripMenuItem
@@ -126,8 +123,7 @@
             this.параметрыМашиныToolStripMenuItem,
             this.параметрыШестерниToolStripMenuItem,
             this.параметрыДифференциалаToolStripMenuItem,
-            this.параметрыРаздаточнойКоробкиToolStripMenuItem,
-            this.выборКинематическоСхемыToolStripMenuItem});
+            this.параметрыРаздаточнойКоробкиToolStripMenuItem});
             this.параметрыРасчетаToolStripMenuItem.Name = "параметрыРасчетаToolStripMenuItem";
             this.параметрыРасчетаToolStripMenuItem.Size = new System.Drawing.Size(102, 24);
             this.параметрыРасчетаToolStripMenuItem.Text = "Параметры";
@@ -159,13 +155,6 @@
             this.параметрыРаздаточнойКоробкиToolStripMenuItem.Size = new System.Drawing.Size(238, 24);
             this.параметрыРаздаточнойКоробкиToolStripMenuItem.Text = "Раздаточная коробка";
             this.параметрыРаздаточнойКоробкиToolStripMenuItem.Click += new System.EventHandler(this.параметрыРаздаточнойКоробкиToolStripMenuItem_Click);
-            // 
-            // выборКинематическоСхемыToolStripMenuItem
-            // 
-            this.выборКинематическоСхемыToolStripMenuItem.Name = "выборКинематическоСхемыToolStripMenuItem";
-            this.выборКинематическоСхемыToolStripMenuItem.Size = new System.Drawing.Size(238, 24);
-            this.выборКинематическоСхемыToolStripMenuItem.Text = "Кинематическая схема";
-            this.выборКинематическоСхемыToolStripMenuItem.Click += new System.EventHandler(this.выборКинематическоСхемыToolStripMenuItem_Click);
             // 
             // проверочныйРасчетToolStripMenuItem
             // 
@@ -244,12 +233,6 @@
             this.х2Н4АToolStripMenuItem1.Size = new System.Drawing.Size(149, 24);
             this.х2Н4АToolStripMenuItem1.Text = "20Х2Н4А";
             this.х2Н4АToolStripMenuItem1.Click += new System.EventHandler(this.х2Н4АToolStripMenuItem1_Click);
-            // 
-            // помощьToolStripMenuItem
-            // 
-            this.помощьToolStripMenuItem.Name = "помощьToolStripMenuItem";
-            this.помощьToolStripMenuItem.Size = new System.Drawing.Size(81, 24);
-            this.помощьToolStripMenuItem.Text = "Помощь";
             // 
             // button2
             // 
@@ -436,7 +419,7 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Расчет раздаточной коробки";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.panel6.ResumeLayout(false);
@@ -467,9 +450,7 @@
         private System.Windows.Forms.ToolStripMenuItem параметрыДифференциалаToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem параметрыРаздаточнойКоробкиToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem выходToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem помощьToolStripMenuItem;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.ToolStripMenuItem выборКинематическоСхемыToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem проверочныйРасчетToolStripMenuItem;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.ToolStripMenuItem нагрузочныйРежимToolStripMenuItem;

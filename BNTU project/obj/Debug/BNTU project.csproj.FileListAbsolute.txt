@@ -64,4 +64,3 @@ e:\Artishog\диссертация\BNTU project\BNTU project\bin\Debug\MySql.Dat
 e:\Artishog\диссертация\BNTU project\BNTU project\obj\Debug\BNTU_project.KinematicSchemeForm.resources
 E:\Artishog\диссертация\BNTU project\BNTU project\obj\Debug\BNTU_project.SingleCheckForm.resources
 E:\Artishog\диссертация\BNTU project\BNTU project\obj\Debug\BNTU_project.LoadModeSettingsForm.resources
-E:\Artishog\диссертация\BNTU project\BNTU project\obj\Debug\BNTU_project.SteelForm.resources

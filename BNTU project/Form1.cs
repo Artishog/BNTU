@@ -171,8 +171,17 @@ namespace BNTU_project
 
             if (transferGearbox.needRecalculation)
             {
-                transferGearbox.aw1 = transferGearbox.aw1 * (differential.d_korp + 3) / gearwheelPair2.df_kol;
-                transferGearbox.aw2 = transferGearbox.aw2 * (differential.d_korp + 3) / gearwheelPair2.df_kol;
+                if (transferGearbox.kinematicScheme == 3)
+                {
+                    transferGearbox.aw1 = transferGearbox.aw1 * (differential.d_korp + 3) / gearwheelPair2.df_kol;
+                    transferGearbox.aw2 = transferGearbox.aw2 * (differential.d_korp + 3) / gearwheelPair2.df_kol;
+                }
+
+                if (transferGearbox.kinematicScheme == 6)
+                {
+                    transferGearbox.aw1 = transferGearbox.aw1 * (differential.d_korp + 3) / gearwheelPair1.df_shest;
+                    transferGearbox.aw2 = transferGearbox.aw1;
+                }
 
                 calcAllParts();
             }
@@ -195,7 +204,7 @@ namespace BNTU_project
             this.gearwheelPair1.calc_FirstPair(transferGearbox.aw1, this.gearwheel.beta, this.gearwheel.mn, this.gearwheel.ha_star, this.gearwheel.hf_star, this.gearwheel.c_star, this.gearwheel.coef_bw, transferGearbox.U1st);
 
             //GearwhellPair2 parameters
-            this.gearwheelPair2.calc_SecondPair(this.gearwheelPair1, this.gearwheel.beta, this.gearwheel.mn, this.gearwheel.ha_star, this.gearwheel.hf_star, this.gearwheel.c_star, this.car.Urk, transferGearbox.U2st);
+            this.gearwheelPair2.calc_SecondPair(this.gearwheelPair1, this.gearwheel.beta, this.gearwheel.mn, this.gearwheel.ha_star, this.gearwheel.hf_star, this.gearwheel.c_star, this.car.Urk, transferGearbox.U2st, transferGearbox.kinematicScheme, transferGearbox.aw1);
 
             //Differential parameters
             differential.calc_allStep1(this.car, this.transferGearbox);
@@ -203,7 +212,7 @@ namespace BNTU_project
             //Transfer gearbox parameters
             transferGearbox.calc_allStep2();
 
-            differential.calc_allStep2();
+            differential.calc_allStep2(this.transferGearbox.L2);
 
             transferGearbox.calc_allStep3();
         }
@@ -292,7 +301,7 @@ namespace BNTU_project
 
             this.contact.calc_All(loadMode.Mp, gearwheelPair1.U_d, gearwheelPair1.beta_d, gearwheelPair1.bw, gearwheel.mn,
                 loadMode.np, gearwheelPair1.z_kol, gearwheelPair1.z_shest, gearwheelPair1.d_shest, gearwheelPair1.bf_shest,
-                gearwheelPair1.da_kol, car.Ukp, loadMode.ksi, car.r0, steel.currentSteel.PHlimb_star, loadMode.KPH, steel.currentSteel.NHO);
+                gearwheelPair1.da_kol, car.Ukp, loadMode.ksi, car.r0, steel.currentSteel.PHlimb_star, loadMode.KPH, steel.currentSteel.NHO, transferGearbox.kinematicScheme);
 
             this.flexion.calc_All(gearwheelPair1.z_shest, gearwheelPair1.z_kol, gearwheelPair1.bf_shest, gearwheelPair1.bw, gearwheelPair1.beta_d,
                 contact.z_eps, contact.precision_plav, contact.K0_beta, contact.Kj_delta, contact.Kve, steel.currentSteel.sigmaFlimb_c_star,

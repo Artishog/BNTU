@@ -132,6 +132,9 @@ namespace BNTU_project
                 //label214.Text = mainForm.transferGearbox.dmax.ToString();
                 label215.Text = mainForm.transferGearbox.mrk.ToString();
 
+                label49.Text = mainForm.transferGearbox.m_korp.ToString();
+                label59.Text = (mainForm.transferGearbox.mrk - mainForm.transferGearbox.m_korp).ToString();
+
             }
             catch (Exception ex)
             {

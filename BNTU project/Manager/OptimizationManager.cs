@@ -20,7 +20,7 @@ namespace BNTU_project
 
         public void startOptimizationCicle()
         {
-            currentState = new ModelState(mainForm);
+            //currentState = new ModelState(mainForm);
 
             mainForm.gearwheel.coef_bw = 0.19;
             while (mainForm.gearwheel.coef_bw <= 0.22)
@@ -63,13 +63,19 @@ namespace BNTU_project
             if (!mainForm.gearwheelPair1.isValid())
                 isValidModel = false;
 
-            if (isValidModel)
+            if (Math.Abs(mainForm.gearwheelPair1.U_d * mainForm.gearwheelPair2.U_d - mainForm.car.Urk) / mainForm.car.Urk > 0.05)
             {
-               // MessageBox.Show("yay?");
+                isValidModel = false;
+            }
+
+            if (isValidModel && (currentState == null))
+            {
+                currentState = new ModelState(mainForm);   
             }
 
             if (isValidModel && (mainForm.transferGearbox.mrk < currentState.transferGearbox.mrk))
             {
+                //MessageBox.Show(mainForm.transferGearbox.mrk.ToString());
                 currentState = new ModelState(mainForm);
                 return true;
             }
@@ -94,19 +100,26 @@ namespace BNTU_project
 
         private void rewriteCurrentModel()
         {
-            mainForm.car = (Car)currentState.car.ShallowCopy();
-            mainForm.gearwheel = (Gearwheel)currentState.gearwheel.ShallowCopy();
-            mainForm.gearwheelPair1 = (GearwheelPair)currentState.gearwheelPair1.ShallowCopy();
-            mainForm.gearwheelPair2 = (GearwheelPair)currentState.gearwheelPair2.ShallowCopy();
-            mainForm.differential = (Differential)currentState.differential.ShallowCopy();
-            mainForm.transferGearbox = (TransferGearbox)currentState.transferGearbox.ShallowCopy();
+            try
+            {
+                mainForm.car = (Car)currentState.car.ShallowCopy();
+                mainForm.gearwheel = (Gearwheel)currentState.gearwheel.ShallowCopy();
+                mainForm.gearwheelPair1 = (GearwheelPair)currentState.gearwheelPair1.ShallowCopy();
+                mainForm.gearwheelPair2 = (GearwheelPair)currentState.gearwheelPair2.ShallowCopy();
+                mainForm.differential = (Differential)currentState.differential.ShallowCopy();
+                mainForm.transferGearbox = (TransferGearbox)currentState.transferGearbox.ShallowCopy();
 
-            mainForm.transferGearbox.Car = mainForm.car;
-            mainForm.transferGearbox.GearwheelPair1 = mainForm.gearwheelPair1;
-            mainForm.transferGearbox.GearwheelPair2 = mainForm.gearwheelPair2;
-            mainForm.transferGearbox.Differential = mainForm.differential;
+                mainForm.transferGearbox.Car = mainForm.car;
+                mainForm.transferGearbox.GearwheelPair1 = mainForm.gearwheelPair1;
+                mainForm.transferGearbox.GearwheelPair2 = mainForm.gearwheelPair2;
+                mainForm.transferGearbox.Differential = mainForm.differential;
 
-            calcModel();
+                calcModel();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Не обнаружено рабочих комбинаций");
+            }
         }
     }
 }

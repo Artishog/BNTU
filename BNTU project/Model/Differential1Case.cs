@@ -28,9 +28,9 @@ namespace BNTU_project
             calc_l1();
         }
 
-        public override void calc_allStep2()
+        public override void calc_allStep2(double L2)
         {
-            calc_l2();
+            calc_l2(L2);
             calc_V1();
             calc_V3();
             calc_V5();
@@ -107,9 +107,10 @@ namespace BNTU_project
             _l1 = 0.54 * _aw_dif;
         }
 
-        public void calc_l2()
+        public void calc_l2(double L2)
         {
-            _l2 = 1.2 * _aw_dif;
+            //_l2 = 1.2 * _aw_dif;
+            _l2 = L2;
         }
 
         public void calc_s()
